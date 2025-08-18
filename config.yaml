@@ -61,13 +61,13 @@ training:
   per_device_train_batch_size: 1
   gradient_accumulation_steps: 1
   num_generations: "8/12"
-  num_train_epochs: 2
+  num_train_epochs: 1
   num_iterations: 1
   save_steps: 500
   max_grad_norm: 0.1
   report_to: ["wandb"]
 
 trainer:
-  class_path: "algorithms.gtpo_training.UnslothGTPOTrainer"
+  class_path: "gtpo.gtpo_training.UnslothGTPOTrainer"
   reward_funcs:
-    - "reward_math.scaled_adaptive_reward_func"
+    - "reward_math.final_reward"

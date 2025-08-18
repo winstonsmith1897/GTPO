@@ -6,32 +6,53 @@
 __UNSLOTH_VERSIONING__
 """
 from __future__ import annotations
-from torch import Tensor
+
+import math
+import os
+from contextlib import nullcontext
+from dataclasses import dataclass, field
+from typing import *
+from typing import Tuple
+
+import numpy as np
 import torch
 import torch.nn as nn
-from torch.nn import functional as F
-from trl.trainer.grpo_trainer import (Any, AutoModelForCausalLM, AutoModelForSequenceClassification, AutoTokenizer, Dataset, GRPOConfig, GRPOTrainer, GenerationConfig, IterableDataset, LLM, Optional, PeftConfig, PreTrainedModel, PreTrainedTokenizerBase, RepeatRandomSampler, RewardFunc, Sampler, SamplingParams, SyncRefModelCallback, Trainer, TrainerCallback, Union, apply_chat_template, broadcast_object_list, create_reference_model, defaultdict, gather, gather_object, generate_model_card, get_comet_experiment_url, is_conversational, is_deepspeed_zero3_enabled, is_peft_model, is_wandb_available, maybe_apply_chat_template, nn, os, pad, patch, prepare_deepspeed, set_seed, textwrap, torch, transformers, unwrap_model_for_generation, version, wandb, warnings, os, torch, transformers, Any, LLM, Union, apply_chat_template, broadcast_object_list, gather, gather_object, is_conversational, maybe_apply_chat_template, nn, os, pad, torch, unwrap_model_for_generation, wandb, GRPOTrainer, Trainer, gather, os, torch)
-from torch._dynamo import disable
-
-
-import os
-from typing import *
-from dataclasses import dataclass, field
 from packaging.version import Version
-import torch
-import numpy as np
-from contextlib import nullcontext
+from torch import Tensor
+from torch._dynamo import graph_break  # per il debug facoltativo
+from torch._dynamo import disable
 from torch.nn import functional as F
-from transformers import DataCollatorForSeq2Seq, DataCollatorForLanguageModeling
-from torch._dynamo import graph_break            # per il debug facoltativo
-import math
-from typing import Tuple
+from transformers import (DataCollatorForLanguageModeling,
+                          DataCollatorForSeq2Seq)
+from trl.trainer.grpo_trainer import (LLM, Any, AutoModelForCausalLM,
+                                      AutoModelForSequenceClassification,
+                                      AutoTokenizer, Dataset, GenerationConfig,
+                                      GRPOConfig, GRPOTrainer, IterableDataset,
+                                      Optional, PeftConfig, PreTrainedModel,
+                                      PreTrainedTokenizerBase,
+                                      RepeatRandomSampler, RewardFunc, Sampler,
+                                      SamplingParams, SyncRefModelCallback,
+                                      Trainer, TrainerCallback, Union,
+                                      apply_chat_template,
+                                      broadcast_object_list,
+                                      create_reference_model, defaultdict,
+                                      gather, gather_object,
+                                      generate_model_card,
+                                      get_comet_experiment_url,
+                                      is_conversational,
+                                      is_deepspeed_zero3_enabled,
+                                      is_peft_model, is_wandb_available,
+                                      maybe_apply_chat_template, nn, os, pad,
+                                      patch, prepare_deepspeed, set_seed,
+                                      textwrap, torch, transformers,
+                                      unwrap_model_for_generation, version,
+                                      wandb, warnings)
 
 # ────────────────────────────────────────────────────────────────────────────
 # Hyper‑parameters & constants
 # ────────────────────────────────────────────────────────────────────────────
 ENT_THRESHOLD: float = 0.7     # entropy cut‑off
-ENT_SCALE: float = 1e-3        # reward ← reward − ENT_SCALE·entropy
+ENT_SCALE: float = 0.1        # advantage ← advantage − ENT_SCALE·entropy
 W_RAW: float = 2.0             # weight for tokens in conflict
 PAD_ID: int = 128004           # padding token id
 EPS: float = 1e-6              # numeric guard for logs
@@ -89,10 +110,6 @@ def compute_completion_stats(
 # helper – build delta masks & conflict stats for a *batch*
 # ────────────────────────────────────────────────────────────────────────────
 
-import torch
-
-# Assumiamo che PAD_ID e W_RAW siano definiti a livello globale nel tuo progetto
-
 
 def build_conflict_mask(
     ids: torch.Tensor,          # (G,L)
@@ -101,24 +118,10 @@ def build_conflict_mask(
     neg_flags: torch.Tensor,    # (G,) bool  (advantage < 0)
     vocab_size: int,
 ):
-    """Costruisce `delta_forward`, `delta_backward`, `delta_final` **ignorando** le
-    completion con *advantage* pari a 0.
-
-    **Pipeline**
-      1. Filtra le completion non attive e lavora su un subset compatto
-         (`pos_use`, `neg_use`, `ids_use`, `mask_use`).
-      2. Calcola i conflitti forward e backward solo su questo subset.
-      3. Ricostruisce l'output nelle dimensioni originali di batch.
-
-    Sono inclusi *print* di debug utili a tracciare i passaggi chiave.
-    """
 
     G, L = ids.shape
     device = ids.device
 
-    # ------------------------------------------------------------------
-    # 0) Individua completion attive e indicizzale
-    # ------------------------------------------------------------------
     active_flags: torch.Tensor = pos_flags | neg_flags               # (G,)
     active_idx:   torch.Tensor = active_flags.nonzero(as_tuple=True)[0]  # (G_act,)
     G_act = active_idx.numel()
@@ -127,15 +130,13 @@ def build_conflict_mask(
     print("[DEBUG] active_flags  :", active_flags.tolist())
     print("[DEBUG] active_idx    :", active_idx.tolist())
 
-    # Se non ci sono completion attive, restituiamo valori di default --------
     if G_act == 0:
         print("[DEBUG] Nessuna completion attiva. Ritorno valori di default.")
-        delta_default  = mask.float()              # niente penalità (tutti 1)
+        delta_default  = mask.float()              
         conflict_zero  = torch.zeros_like(mask, dtype=torch.float)
         seq_count_zero = torch.zeros(G, dtype=torch.long, device=device)
         return delta_default, conflict_zero, seq_count_zero
 
-    # Slice delle grandezze rilevanti ---------------------------------------
     ids_use   = ids[active_idx]          # (G_act, L)
     mask_use  = mask[active_idx]         # (G_act, L)
     pos_use   = pos_flags[active_idx]    # (G_act,)
@@ -145,7 +146,7 @@ def build_conflict_mask(
     print("[DEBUG] neg_use       :", neg_use.tolist())
 
     # ------------------------------------------------------------------
-    # 1) Conflitti FORWARD ----------------------------------------------
+    # 1) Conflict FORWARD ----------------------------------------------
     # ------------------------------------------------------------------
     step_idx = torch.arange(L, device=device).unsqueeze(0)           # (1,L)
     keys     = (step_idx * vocab_size + ids_use).view(-1)            # (G_act·L,)
@@ -173,7 +174,7 @@ def build_conflict_mask(
     ) * mask_use
 
     # ------------------------------------------------------------------
-    # 2) Conflitti BACKWARD (reverse) ------------------------------------
+    # 2) Conflict BACKWARD (reverse) ------------------------------------
     # ------------------------------------------------------------------
     seq_len  = mask_use.sum(-1)                # (G_act,)
     pad_len  = L - seq_len
@@ -208,7 +209,7 @@ def build_conflict_mask(
     delta_bw_use = delta_bw_rot.flip(-1) * mask_use
 
     # ------------------------------------------------------------------
-    # 3) Delta finale e statistiche (solo sulle completion attive) -------
+    # 3) Final Mask and Stats
     # ------------------------------------------------------------------
     delta_final_use = delta_fwd * delta_bw_use                        # (G_act,L)
 
@@ -225,9 +226,7 @@ def build_conflict_mask(
     total_conflict_use = (conflict_fwd | conflict_rev) & mask_use.bool()
     n_conflict_seq_use = total_conflict_use.sum(-1).long().clamp_min(1)  # (G_act,)
 
-    # ------------------------------------------------------------------
-    # 4) Ricompone i tensori con il layout originale ---------------------
-    # ------------------------------------------------------------------
+   
     delta_final      = mask.float().clone()      # default 1 (inattive)
     total_conflict   = torch.zeros_like(mask, dtype=torch.float)
     n_conflict_seq   = torch.zeros(G, dtype=torch.long, device=device)
@@ -236,14 +235,13 @@ def build_conflict_mask(
     total_conflict[active_idx] = total_conflict_use.float()
     n_conflict_seq[active_idx] = n_conflict_seq_use
 
-    print("\n[DEBUG] Ricomposizione completata. Ritorno tensori di output.")
     return delta_final, total_conflict, n_conflict_seq
 
 # ────────────────────────────────────────────────────────────────────────────
 # 1) Loss for a single completion – ratio = 1 with gradient
 # ────────────────────────────────────────────────────────────────────────────
 
-def grpo_compute_loss(
+def gtpo_compute_loss(
     old_logits: torch.Tensor,
     new_logits: torch.Tensor,
     input_ids: torch.Tensor,
@@ -251,9 +249,6 @@ def grpo_compute_loss(
     delta: torch.Tensor,
     beta: float,
     advantages: torch.Tensor,   # scalar tensor already pre‑processed
-    rewards: torch.Tensor,      # unused but kept for API symmetry
-    std_reward: float,
-    conf_mask: torch.Tensor,
     n_conflict: torch.Tensor,
 ):
     mask_f = mask.float(); n_tok = mask_f.sum().clamp(min=1.0)
@@ -278,18 +273,6 @@ def grpo_compute_loss(
 # 2) Autograd wrapper – computes delta/conflict internally
 # ────────────────────────────────────────────────────────────────────────────
 
-
-        rew_adj = torch.zeros_like(rewards)
-        rew_adj[low_ent] = rewards[low_ent] - ENT_SCALE * entropies[low_ent]
-        R_mean = rew_adj[low_ent].mean() if low_ent.any() else torch.tensor(0., device=device)
-        advantages = torch.zeros_like(rew_adj)
-        advantages[low_ent] = rew_adj[low_ent] - R_mean
-        std_reward = rew_adj[low_ent].std() if low_ent.any() else torch.tensor(1., device=device)
-        print(f'R MEAN : {R_mean}')
-        print(f'NEW REWARDS : {rew_adj}')
-        print(f'NEW ADVANTAGES : {advantages}')
-
-
 class UnslothEfficientGTPO(torch.autograd.Function):
     @staticmethod
     def forward(
@@ -299,10 +282,10 @@ class UnslothEfficientGTPO(torch.autograd.Function):
         lm_head: torch.Tensor,              # weight matrix (V,H)
         comp_ids: torch.Tensor,             # (B,G,L)
         comp_mask: torch.Tensor,            # (B,G,L)
-        advantages: torch.Tensor,
-        rewards: torch.Tensor,              # (B,G)
+        advantages: torch.Tensor,           # (G,) oppure (B,G)
+        rewards: torch.Tensor,              # (G,) oppure (B,G)
         beta: float,
-        scaler = None,
+        scaler=None,
         n_chunks: int = 1,
     ):
         print("=============== EFFICIENT (CONFLICT INSIDE) ===============")
@@ -312,77 +295,101 @@ class UnslothEfficientGTPO(torch.autograd.Function):
         vocab_size = lm_head.size(0)
         lm_w = lm_head.t()  # (H,V)
 
-        # ---- broadcast rewards ------------------------------------------
+        # ---- broadcast rewards a (B,G) ----------------------------------
         if rewards.dim() == 1:
+            assert rewards.shape[0] == G, f"rewards len {rewards.shape[0]} != G={G}"
             rewards = rewards.unsqueeze(0).expand(B, -1)
+        else:
+            assert rewards.shape == (B, G), f"rewards shape {tuple(rewards.shape)} != (B,{G})"
         rewards = rewards.to(device)
 
-        # ---- entropy & KL per completion --------------------------------
+        # ---- normalizza advantages a (B,G) ------------------------------
+        if advantages.dim() == 1:
+            assert advantages.shape[0] == G, f"advantages len {advantages.shape[0]} != G={G}"
+            adv_BG = advantages.unsqueeze(0).expand(B, -1).to(device)  # (B,G)
+        elif advantages.dim() == 2:
+            assert advantages.shape == (B, G), f"advantages shape {tuple(advantages.shape)} != (B,{G})"
+            adv_BG = advantages.to(device)
+        else:
+            raise ValueError(f"advantages must be 1D or 2D, got {advantages.dim()}D")
+
+        # ---- entropy per completion ------------------------------------
         entropies = torch.zeros((B, G), device=device)
         for b in range(B):
             for g in range(G):
-                new_h = _new_hidden_states[b, g]
-                old_h = _old_hidden_states[b, g]
-                ids = comp_ids[b, g]
-                msk = comp_mask[b, g]
+                new_h = _new_hidden_states[b, g]        # (L*,H)
+                old_h = _old_hidden_states[b, g]        # (L*,H)
+                ids   = comp_ids[b, g]                  # (L,)
+                msk   = comp_mask[b, g]                 # (L,)
+
                 e, _ = compute_completion_stats(
-                    torch.matmul(old_h, lm_w)[:-1], torch.matmul(new_h, lm_w)[:-1], ids, msk
+                    torch.matmul(old_h, lm_w)[:-1],
+                    torch.matmul(new_h, lm_w)[:-1],
+                    ids,
+                    msk,
                 )
                 entropies[b, g] = e
 
         print(f'ENTROPIES : {entropies}')
-        # ---- reward adjustment & advantages -----------------------------
-        low_ent = entropies <= ENT_THRESHOLD
+        low_ent = entropies <= ENT_THRESHOLD  # (B,G)
 
         # ---- build delta/conflict ---------------------------------------
-        delta_masks = torch.zeros_like(comp_mask, dtype=torch.float32)
-        conflict_masks = torch.zeros_like(comp_mask, dtype=torch.float32)
+        delta_masks    = torch.zeros_like(comp_mask, dtype=torch.float32)  # (B,G,L)
+        conflict_masks = torch.zeros_like(comp_mask, dtype=torch.float32)  # (B,G,L)
         n_conflict_seq = torch.zeros((B, G), dtype=torch.long, device=device)
 
         for b in range(B):
-            pos_flags = advantages[b] > 0
-            neg_flags = advantages[b] < 0  # <- escludiamo adv == 0
+            adv_b = adv_BG[b]                # (G,)
+            pos_flags_b = (adv_b > 0)        # (G,)
+            neg_flags_b = (adv_b < 0)        # (G,)
 
-            print(f'POS FLAGS : {pos_flags}')
-            print(f'NEG FLAGS : {neg_flags}')
+            print(f'POS FLAGS : {pos_flags_b}')
+            print(f'NEG FLAGS : {neg_flags_b}')
+
             delta_b, conf_b, nconf_b = build_conflict_mask(
-                comp_ids[b], comp_mask[b], pos_flags, neg_flags, vocab_size
+                comp_ids[b], comp_mask[b], pos_flags_b, neg_flags_b, vocab_size
             )
 
-             # ─── debug / logging ─────────────────────────────────────────
-            active_idx = (advantages[b] != 0).nonzero(as_tuple=True)[0]
+            # ─── debug / logging ─────────────────────────────────────────
+            active_idx = (adv_b != 0).nonzero(as_tuple=True)[0]
             print(f"Batch {b} – completions con conflitto attivo: {active_idx.tolist()}")
             for g in range(G):
-                adv_val = advantages[b, g].item()
+                adv_val = float(adv_b[g].item())
                 tag = "+" if adv_val > 0 else ("-" if adv_val < 0 else "0")
                 print(f"   completion {g}: adv={tag}  n_conflict={int(nconf_b[g])}")
             # ─────────────────────────────────────────────────────────────
-            delta_masks[b] = delta_b
+
+            delta_masks[b]    = delta_b
             conflict_masks[b] = conf_b
             n_conflict_seq[b] = nconf_b
 
-        advantages = torch.where(low_ent,
-                                advantages - ENT_SCALE * entropies,
-                                torch.zeros_like(advantages))
+        # ---- entropy shaping sugli advantages ---------------------------
+        adv_BG = torch.where(
+            low_ent,
+            adv_BG - ENT_SCALE * entropies,
+            torch.zeros_like(adv_BG),
+        )
+
         # ---- gradient accumulation --------------------------------------
         grad_inputs = torch.empty_like(_new_hidden_states)
         scaling = scaler.get_scale() if scaler is not None else 1.0
         acc_loss = torch.zeros(1, device=device)
-        acc_len = torch.zeros(1, device=device)
-        acc_kl = torch.zeros(1, device=device)
+        acc_len  = torch.zeros(1, device=device)
+        acc_kl   = torch.zeros(1, device=device)
 
         def compute_loss(new_h, old_h, ids, msk, dlt, adv, rew, c_mask, n_conf, scl):
             new_logits = torch.matmul(new_h, lm_w)[:-1]
             old_logits = torch.matmul(old_h, lm_w)[:-1]
-            loss_, ln_, kl_ = GTPO_compute_loss(
-                old_logits, new_logits, ids, msk, dlt, beta, adv, rew, std_reward, c_mask, n_conf
+            loss_, ln_, kl_ = gtpo_compute_loss(
+                old_logits, new_logits, ids, msk, dlt, beta, adv, n_conf
             )
             return loss_ * scl, (loss_.detach(), ln_, kl_)
 
         @torch.compile(fullgraph=False)
         def accumulate(new_h, old_h, ids, msk, dlt, adv, rew, c_mask, n_conf, scl):
-            (g,), (l, (raw, ln, kl)) = torch.func.grad_and_value(compute_loss, argnums=(0,), has_aux=True)(
-                new_h, old_h, ids, msk, dlt, adv, rew, c_mask, n_conf, scl)
+            (g,), (l, (raw, ln, kl)) = torch.func.grad_and_value(
+                compute_loss, argnums=(0,), has_aux=True
+            )(new_h, old_h, ids, msk, dlt, adv, rew, c_mask, n_conf, scl)
             acc_loss.add_(raw); acc_len.add_(ln); acc_kl.add_(kl)
             return g
 
@@ -391,17 +398,20 @@ class UnslothEfficientGTPO(torch.autograd.Function):
                 grad_inputs[b, g] = accumulate(
                     _new_hidden_states[b, g], _old_hidden_states[b, g],
                     comp_ids[b, g], comp_mask[b, g], delta_masks[b, g],
-                    advantages[b, g].unsqueeze(0), rewards[b, g].unsqueeze(0),
-                    conflict_masks[b, g], n_conflict_seq[b, g].unsqueeze(0), scaling
+                    adv_BG[b, g].unsqueeze(0),
+                    rewards[b, g].unsqueeze(0),
+                    conflict_masks[b, g],
+                    n_conflict_seq[b, g].unsqueeze(0),
+                    scaling,
                 )
 
         ctx.save_for_backward(grad_inputs)
-        grad_inputs_check = grad_inputs.squeeze(0)  # shape: (G, L, H)
 
-        # Calcola la norma per ogni completion
-        for g in range(grad_inputs_check.shape[0]):
-            grad_norm = grad_inputs_check[g].norm().item()  # norma L2 complessiva su tutti i token e hidden
-            print(f"Completion {g}: grad_norm = {grad_norm:.6f}")
+        for b in range(B):
+            for g in range(G):
+                grad_norm = grad_inputs[b, g].norm().item()
+                print(f"[b={b}] completion {g}: grad_norm = {grad_norm:.6f}")
+
         return acc_loss, acc_len, acc_kl
 
     @staticmethod
@@ -409,17 +419,15 @@ class UnslothEfficientGTPO(torch.autograd.Function):
         (grad_input,) = ctx.saved_tensors
         return (grad_input,) + (None,) * 12
 
-# ────────────────────────────────────────────────────────────────────────────
-# 3) Trainer‑side convenience wrapper – no conflict computation here
-# ────────────────────────────────────────────────────────────────────────────
+
 def GTPO_accumulated_loss(
     trainer,
     input_ids: torch.Tensor,
     logits_to_keep: int,
     completion_mask: torch.Tensor,
-    advantages: torch.Tensor,  # compat, non usato
+    advantages: torch.Tensor,  
     rewards: torch.Tensor,
-    *,                         # da qui in poi solo keyword
+    *,                         
     n_chunks: int = -1,
 ):
 
@@ -432,13 +440,11 @@ def GTPO_accumulated_loss(
     device = input_ids.device
     bsz, _ = input_ids.shape
 
-    # 1) scegli numero di chunk divisore di bsz --------------------------------
     factors = [i for i in range(1, bsz + 1) if bsz % i == 0]
     if n_chunks == -1:
         n_chunks = bsz
     n_chunks = factors[min(np.searchsorted(factors, n_chunks), len(factors) - 1)]
 
-    # 2) dtype mixed-precision --------------------------------------------------
     mixed_dtype = (
         torch.float16
         if os.getenv("ACCELERATE_MIXED_PRECISION", "fp16") == "fp16"
@@ -446,7 +452,6 @@ def GTPO_accumulated_loss(
     )
     os.environ["UNSLOTH_RETURN_HIDDEN_STATES"] = "1"
 
-    # 3) reshape a (B,G,…) ------------------------------------------------------
     completion_input_ids = input_ids[:, -logits_to_keep:]
     if rewards.dim() == 1:                                      # caso B = 1
         rewards = rewards.unsqueeze(0)                          # (1,G)
@@ -456,7 +461,6 @@ def GTPO_accumulated_loss(
     B, G = rewards.shape
     lm_head = trainer.model.get_output_embeddings().weight
 
-    # 4) forward modello: hidden states vecchi e nuovi --------------------------
     with torch.amp.autocast(device_type="cuda", dtype=mixed_dtype):
         with torch.no_grad(), trainer.accelerator.unwrap_model(
             trainer.model, keep_fp32_wrapper=False
@@ -476,18 +480,10 @@ def GTPO_accumulated_loss(
     comp_ids  = completion_input_ids.view(B, G, L)
     comp_mask = completion_mask.view(B, G, L)
 
-    # 5) placeholder (verranno ignorati e ricalcolati internamente) -------------
-    zeros_mask = torch.zeros_like(comp_mask, dtype=torch.float32)
-    zeros_adv  = torch.zeros((B, G), device=device)
-    zeros_conf = torch.zeros_like(comp_mask, dtype=torch.float32)
-    ones_nconf = torch.ones((B, G), dtype=torch.long, device=device)
-
-    # 6) chiama l’autograd function --------------------------------------------
     loss, completion_length, mean_kl = UnslothEfficientGTPO.apply(
         new_hidden_states, old_hidden_states, lm_head,
-        comp_ids, comp_mask, zeros_mask,           # delta placeholder
-        zeros_adv, rewards, zeros_conf, ones_nconf,
-        trainer.beta, trainer.accelerator.scaler, n_chunks,
+        comp_ids, comp_mask,          
+        advantages, rewards, trainer.beta, trainer.accelerator.scaler, n_chunks,
     )
 
     return loss, completion_length, mean_kl
@@ -535,6 +531,7 @@ def vLLMSamplingParams(**kwargs):
     sampling_params = SamplingParams(**kwargs)
     sampling_params._set_kwargs = kwargs
     return sampling_params
+
 @dataclass
 class UnslothGTPOConfig(GRPOConfig):
     """

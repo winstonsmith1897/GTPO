@@ -2,25 +2,22 @@
 # Single entrypoint: reads everything from YAML but allows CLI overrides (model/dataset/etc).
 
 import os
-import re
-import sys
-import math
-import yaml
-import json
-import types
-import random
+
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+
+from unsloth import FastLanguageModel, PatchFastRL
 import argparse
 import importlib
+import random
+import re
 import warnings
-from dataclasses import dataclass
-from typing import List, Dict, Any
+from typing import Dict
 
 import numpy as np
 import torch
-from datasets import load_dataset, concatenate_datasets
-from unsloth import FastLanguageModel, PatchFastRL
+import yaml
+from datasets import concatenate_datasets, load_dataset
 from trl import GRPOConfig
-
 
 # =============== UTILITIES ===============
 
@@ -268,10 +265,10 @@ def train(cfg: Dict):
     - train and save LoRA adapters
     """
     # Optional environment variables from YAML
-    if "env" in cfg:
-        for k, v in cfg["env"].items():
-            if v is not None:
-                os.environ[str(k)] = str(v)
+    # if "env" in cfg:
+    #     for k, v in cfg["env"].items():
+    #         if v is not None:
+    #             os.environ[str(k)] = str(v)
 
     # Patch RL for Unsloth
     PatchFastRL("GRPO", FastLanguageModel)
@@ -285,11 +282,11 @@ def train(cfg: Dict):
 
     # Trainer class
     tr_cfg = cfg["trainer"]
-    trainer_cls_path = tr_cfg.get("class_path", "algorithms.gtpo_training.UnslothGTPOTrainer")
+    trainer_cls_path = tr_cfg.get("class_path", "gtpo.gtpo_training.UnslothGTPOTrainer")
     GTPOTrainer = import_object(trainer_cls_path)
 
     # Reward functions (can be 1 or many)
-    reward_paths = ensure_list(tr_cfg.get("reward_funcs", "reward_math.scaled_adaptive_reward_func"))
+    reward_paths = ensure_list(tr_cfg.get("reward_funcs", "reward_math.final_reward"))
     reward_funcs = [import_object(p) for p in reward_paths]
 
     # Training args
