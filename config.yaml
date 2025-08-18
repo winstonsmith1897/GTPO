@@ -1,0 +1,35 @@
+model_name: "meta-llama/meta-Llama-3.1-8B-Instruct" #"unsloth/phi-4-unsloth-bnb-4bit" #"meta-llama/meta-Llama-3.1-8B-Instruct" #"Pairwise-Dataset_gen12_bs1_len8000_lr1e-6_BetaKL0.0001"  #"meta-llama/meta-Llama-3.1-8B-Instruct"
+max_seq_length: 5500
+max_prompt_length: 4000
+lora_rank: 128
+load_in_4bit: true
+gpu_memory_utilization: 0.4
+target_modules:
+  - "q_proj"
+  - "k_proj"
+  - "v_proj"
+  - "o_proj"
+  - "gate_proj"
+  - "up_proj"
+  - "down_proj"
+random_seed: 3407
+# dataset_path: "DiverseVul-Split-Balanced"
+balance_chunk_size: 2000
+
+warmup_ratio: 0.005
+learning_rate: 1e-6
+adam_beta1: 0.9 #99999
+adam_beta2: 0.95 #99999
+weight_decay: 0.1
+beta: 0.0
+lr_scheduler_type: "cosine"
+optimizer: "paged_adamw_8bit"
+logging_steps: 1
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 1
+num_generations: 8
+num_train_epochs: 2
+num_iterations: 1
+save_steps: 500
+max_grad_norm: 0.1
+report_to: ["wandb"]
