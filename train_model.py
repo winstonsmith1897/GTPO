@@ -253,6 +253,54 @@ def build_output_dir(cfg: Dict):
     ]
     return "_".join(str(p) for p in parts)
 
+def apply_gtpo_runtime_overrides(cfg: Dict):
+    """Load overrides from cfg['gtpo_runtime'] and set them into gtpo.gtpo_training."""
+    rt = cfg.get("gtpo_runtime") or {}
+    if not isinstance(rt, dict) or not rt:
+        print("[INFO] No gtpo_runtime overrides found in config.")
+        return
+
+    import importlib
+    gtpo = importlib.import_module("gtpo.gtpo_training")
+
+    # Map YAML keys -> module attribute names
+    mapping = {
+        "ent_threshold": "ENT_THRESHOLD",
+        "ent_scale":     "ENT_SCALE",
+        "w_raw":         "W_RAW",
+        "pad_id":        "PAD_ID",
+        "eps":           "EPS",
+    }
+
+    for yaml_key, attr_name in mapping.items():
+        if yaml_key in rt:
+            val = rt[yaml_key]
+            # Cast to the current type to stay safe
+            cur = getattr(gtpo, attr_name, None)
+            try:
+                if isinstance(cur, bool):
+                    casted = bool(val)
+                elif isinstance(cur, int):
+                    casted = int(val)
+                elif isinstance(cur, float):
+                    casted = float(val)
+                else:
+                    casted = val
+            except Exception:
+                casted = val
+            setattr(gtpo, attr_name, casted)
+            print(f"[GTPO] Set {attr_name} = {casted}")
+
+    # torch.compile options
+    tc = rt.get("torch_compile_options")
+    if isinstance(tc, dict) and tc:
+        if not hasattr(gtpo, "torch_compile_options") or not isinstance(gtpo.torch_compile_options, dict):
+            gtpo.torch_compile_options = {}
+        gtpo.torch_compile_options.update(tc)
+        print(f"[GTPO] Updated torch_compile_options = {gtpo.torch_compile_options}")
+    else:
+        print("[GTPO] No torch_compile_options overrides provided (or not a dict).")
+
 
 def train(cfg: Dict):
     """
@@ -279,6 +327,9 @@ def train(cfg: Dict):
     # Model & dataset
     model, tokenizer = load_model_and_tokenizer(cfg)
     dataset = load_and_prepare_dataset(cfg, tokenizer)
+
+    # Apply GTPO runtime overrides (entropy, PAD_ID, W_RAW, etc.)
+    apply_gtpo_runtime_overrides(cfg)
 
     # Trainer class
     tr_cfg = cfg["trainer"]

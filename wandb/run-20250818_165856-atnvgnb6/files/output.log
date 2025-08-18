@@ -1,0 +1,1079 @@
+  0%|                                                                                            | 0/7473 [00:00<?, ?it/s]
++++++++++++++++++ STEP: 1 +++++++++++++++++
+ ============   COMP - 1 =============
+COMPLETION: <reasoning}
+Let's break down the time spent by James step-by-step to find out the total time he spent learning chess.
+
+1. **Time to learn the rules:** The problem states that it takes 2 hours to learn the rules of chess.
+
+2. **Time to get proficient to play in local tournaments:** It takes him 49 times the 2 hours to get proficient to start playing in local tournaments. So, we calculate:
+   \[
+   49 \times 2 = 98 \text{ hours}
+   \]
+
+3. **Combined time to get proficient to start mastering chess:** To find the combined time, we add the time to learn the rules and the time to get proficient:
+   \[
+   2 + 98 = 100 \text{ hours}
+   \]
+
+4. **Time to become a master:** It takes 100 times the combined time to become a master:
+   \[
+   100 \times 100 = 10000 \text{ hours}
+   \]
+
+5. **Total time spent:** To find the total time, we add all the components together:
+   \[
+   2 + 98 + 10000 = 10100 \text{ hours}
+   \]
+
+</reasoning>
+<answer>
+James spent a total of 10,100 hours learning to become a chess grandmaster.
+</answer>
+    - Format Reward : 1.5
+    - Correctness R : 0
+    - Total Reward  : 1.5
++++++++++++++++++ STEP: 1 +++++++++++++++++
+ ============   COMP - 2 =============
+COMPLETION: Let's break down the problem step by step:
+
+1. **Time to Learn the Rules:**
+   James spends 2 hours learning the rules.
+   - Let the total time to learn the rules be \( T_{rules} = 2 \) hours.
+
+2. **Time to Gains Proficiency to Start Playing Locally:**
+   It takes him 49 times as long to gain proficiency as it does to learn the rules.
+   - \( T_{proficiency} = 49 \times T_{rules} = 49 \times 2 = 98 \) hours.
+
+3. **Combined Time to Get Proficient:**
+   The combined time to learn the rules and gain proficiency is:
+   - \( T_{combined} = T_{rules} + T_{proficiency} = 2 + 98 = 100 \) hours.
+
+4. **Time to Become Master:**
+   It takes him 100 times the combined time to become a master.
+   - \( T_{master} = 100 \times T_{combined} = 100 \times 100 = 10000 \) hours.
+
+5. **Total Time Spent:**
+   The total time spent by James is the sum of all the times in the above steps.
+   - Total time \( T_{total} = T_{rules} + T_{proficiency} + T_{master} = 2 + 98 + 10000 = 10100 \) hours.
+
+Now, I will present the final result.
+<answer>10100</answer>
+    - Format Reward : 1.0
+    - Correctness R : 0
+    - Total Reward  : 1.0
++++++++++++++++++ STEP: 1 +++++++++++++++++
+ ============   COMP - 3 =============
+COMPLETION: <reasoning}
+To find the total time James spent on learning and becoming a chess grandmaster, we'll break the problem into parts and solve step by step:
+1. First, determine the time it took him to learn the rules.
+   - Given: It takes 2 hours to learn the rules.
+
+2. Then, to find the time it took to become proficient.
+   - Given: It takes 49 times the time to learn the rules to become proficient.
+   - Time to become proficient = 2 hours * 49 = 98 hours.
+
+3. Next, determine the combined total time before devoting his life to chess.
+   - Combined time = Time to learn rules + Time to become proficient
+   - Combined time = 2 hours + 98 hours = 100 hours.
+
+4. Finally, calculate the time it took to become a master.
+   - Given: This takes 100 times the combined time.
+   - Time to become a master = 100 hours * 100 = 10,000 hours.
+
+5. Add the time it took to become a master to the combined time to get proficient.
+   - Total time spent = Combined time + Time to become a master
+   - Total time spent = 100 hours + 10,000 hours = 10,100 hours.
+</reasoning>
+<answer>
+James spent a total of 10,100 hours on learning and becoming a chess grandmaster.
+</answer>
+    - Format Reward : 1.5
+    - Correctness R : 0
+    - Total Reward  : 1.5
++++++++++++++++++ STEP: 1 +++++++++++++++++
+ ============   COMP - 4 =============
+COMPLETION: <reasoning}
+To find the total time James spent, let's break the problem into parts and calculate each step by step.
+
+1. **Time to learn the rules:**
+   - According to the problem, this takes 2 hours.
+
+2. **Time to achieve proficiency:**
+   - The problem states it takes him 49 times longer to get proficient than to learn the rules.
+   - Calculation: \(49 \times 2\) hours
+
+3. **Total time to get proficient:**
+   - Combined time for rules and proficiency:
+   - Total time for proficiency:
+   - This includes the time to learn the rules and the time to become proficient. Let's add:
+   - Total time: \(2 + (49 \times 2)\) hours
+
+4. **Time to become a master:**
+   - The time to become a master is 100 times the combined time to get proficient.
+   - Combined time to get proficient:  (from step 3)
+   - Time to become a master:
+   - Calculating: \(100 \times \text{Total time to get proficient}\)
+
+5. **Total time spent (including being a master):**
+   - Total time spent: (time to learn rules + time to get proficient + time to become a master)
+
+Let's do the arithmetic.
+
+Step 2:
+\[ 49 \times 2 = 98 \text{ hours} \]
+
+Step 3:
+\[ 2 + 98 = 100 \text{ hours} \]
+
+Step 4:
+\[ 100 \times 100 = 10000 \text{ hours} \]
+
+Step 5:
+\[ 100 + 98 + 10000 = 10198 \text{ hours} \]
+
+</reasoning>
+<answer>
+The total time James spent is 10198 hours.
+</answer>
+    - Format Reward : 1.5
+    - Correctness R : 0
+    - Total Reward  : 1.5
++++++++++++++++++ STEP: 1 +++++++++++++++++
+ ============   COMP - 5 =============
+COMPLETION: <reasoning}
+Let's break down the problem step by step.
+
+1. **Time to learn the rules**:
+   It takes James 2 hours to learn the basic rules of chess.
+
+2. **Time to get proficiency**:
+   It takes him 49 times the time to learn the rules to achieve proficiency.
+
+   Therefore, time to get proficiency = 49 × 2 = 98 hours.
+
+3. **Combined time to get from proficient to a master**:
+   The combined time to get from proficiency to becoming a master is given by:
+
+   It takes 100 times the combined time to get proficient (before the dedication period) to reach the master level.
+
+   The combined time is the sum of the time spent learning the rules and the time spent getting proficient.
+
+   Combined time = time to learn rules + time to get proficient
+                = 2 hours + 98 hours
+                = 100 hours
+
+   Time to become a master = 100 × 100
+                           = 10000 hours.
+
+4. **Total time spent**:
+   Total time = Time to learn the rules + Time to get proficient + Time to become a master.
+              = 2 + 98 + 10000
+              = 10100 hours.
+
+</reasoning>
+<answer>
+James spent a total of 10,100 hours.
+</answer>
+    - Format Reward : 1.5
+    - Correctness R : 0
+    - Total Reward  : 1.5
++++++++++++++++++ STEP: 1 +++++++++++++++++
+ ============   COMP - 6 =============
+COMPLETION: <reasoning}
+First, let's break down the information given:
+- It takes 2 hours to learn the rules of chess.
+- It then takes him 49 times the time to learn the rules to achieve proficiency to start playing in local tournaments.
+- After becoming proficient, he spends 100 times the combined time of learning the rules and reaching proficiency to become a master.
+
+To find the total time spent, we need to calculate the time taken for each step and sum them up:
+- Time for rules: 2 hours.
+- Time for proficiency: 49 * 2 hours.
+- Time to become a master: 100 * (time for rules + time for proficiency).
+
+Now, we can calculate the time for each step:
+- Time for proficiency: 49 * 2 = 98 hours.
+- Combined time for rules and proficiency: 2 + 98 = 100 hours.
+- Time to become a master: 100 * 100 = 10000 hours.
+
+Finally, sum up all the times to find the total time spent:
+- Total time = 2 hours (rules) + 98 hours (proficiency) + 10000 hours (master).
+
+Therefore, we have:
+<answer>
+2 + 98 + 10000 = 10100 hours.
+</answer>
+    - Format Reward : 1.0
+    - Correctness R : 0
+    - Total Reward  : 1.0
++++++++++++++++++ STEP: 1 +++++++++++++++++
+ ============   COMP - 7 =============
+COMPLETION: <reasoning}
+To find the total time James spent, we need to calculate the time he spent on each phase and then add them up.
+
+1. Time to learn the rules: 2 hours.
+2. Time to get proficient: 49 times the time it took to learn the rules, which is \( 49 \times 2 \) hours.
+3. Time to become a master: 100 times the combined time to get proficient and spend the rest of his life on chess. The combined time here would be the time to get proficient.
+
+Let's denote the time to learn the rules as \( T_1 \), the time to get proficient as \( T_2 \), and the time to become a master as \( T_3 \).
+
+- \( T_1 = 2 \) hours
+- \( T_2 = 49 \times 2 = 98 \) hours
+- \( T_3 = 100 \times (T_1 + T_2) = 100 \times (2 + 98) = 100 \times 100 = 10000 \) hours
+
+Now, sum up the times for each phase:
+- Time spent learning the rules: \( T_1 = 2 \) hours
+- Time spent becoming proficient: \( T_2 = 98 \) hours
+- Time spent becoming a master: \( T_3 = 10000 \) hours
+
+Adding these together gives the total time spent:
+\[ \text{Total Time} = T_1 + T_2 + T_3 = 2 + 98 + 10000 = 10100 \text{ hours} \]
+
+</reasoning>
+<answer>
+10100 hours
+</answer>
+    - Format Reward : 1.5
+    - Correctness R : 0
+    - Total Reward  : 1.5
++++++++++++++++++ STEP: 1 +++++++++++++++++
+ ============   COMP - 8 =============
+COMPLETION: <reasoning}
+First, we need to calculate the time James spent learning the rules of chess, which is given as 2 hours.
+
+To determine the time to get a level of proficiency (to play in local tournaments), he needs 49 times the time it took to learn the rules.
+So the time required to reach this level is
+\[ 49 \times 2 \text{ hours} = 98 \text{ hours} \]
+
+Next, to find the total time to become a master, we are given that it takes 100 times the time combined to learn the rules and reach proficiency.
+The time combined to learn the rules (2 hours) and get proficient (98 hours) is
+\[ 2 + 98 = 100 \text{ hours} \]
+
+Therefore,
+\[ 100 \times 100 = 10000 \text{ hours} \]
+
+Finally, to find the total time spent, we add up all the time taken in each phase:
+\[
+2 \text{ (learning rules)} + 98 \text{ (proficiency)} + 10000 \text{ (master)} = 10100 \text{ hours}
+\]
+
+</reasoning>
+<answer>
+James spent a total of 10100 hours.
+</answer>
+    - Format Reward : 1.5
+    - Correctness R : 0
+    - Total Reward  : 1.5
+REWARDS: tensor([1.5000, 1.0000, 1.5000, 1.5000, 1.5000, 1.0000, 1.5000, 1.5000],
+       device='cuda:0')
+MEAN : tensor([1.3750, 1.3750, 1.3750, 1.3750, 1.3750, 1.3750, 1.3750, 1.3750],
+       device='cuda:0')
+ORIGINAL ADVANTAGES : tensor([ 0.1250, -0.3750,  0.1250,  0.1250,  0.1250, -0.3750,  0.1250,  0.1250],
+       device='cuda:0')
+COMPLETION MASK SUM : tensor([312, 347, 326, 416, 308, 296, 390, 289], device='cuda:0')
+=============== EFFICIENT (CONFLICT INSIDE) ===============
+ENTROPIES : tensor([[0.3542, 0.2975, 0.3703, 0.5169, 0.4620, 0.4428, 0.3047, 0.4513]],
+       device='cuda:0')
+POS FLAGS : tensor([ True, False,  True,  True,  True, False,  True,  True],
+       device='cuda:0')
+NEG FLAGS : tensor([False,  True, False, False, False,  True, False, False],
+       device='cuda:0')
+
+[DEBUG] G = 8 L = 416
+[DEBUG] active_flags  : [True, True, True, True, True, True, True, True]
+[DEBUG] active_idx    : [0, 1, 2, 3, 4, 5, 6, 7]
+[DEBUG] pos_use       : [True, False, True, True, True, False, True, True]
+[DEBUG] neg_use       : [False, True, False, False, False, True, False, False]
+[DEBUG] conflict_raw (forward) shape: torch.Size([8, 416])
+[DEBUG] conflict_raw_rev shape: torch.Size([8, 416])
+
+[DEBUG] completion original index 0 (subset row 0)
+FWD : ████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒········································································································
+BWD : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█████········································································································
+FIN : ████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█████········································································································
+
+[DEBUG] completion original index 1 (subset row 1)
+FWD : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒·····································································
+BWD : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒·········································································
+FIN : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒·········································································
+
+[DEBUG] completion original index 2 (subset row 2)
+FWD : ████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒··························································································
+BWD : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█████··························································································
+FIN : ████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█████··························································································
+
+[DEBUG] completion original index 3 (subset row 3)
+FWD : ████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+BWD : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██████
+FIN : ████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██████
+
+[DEBUG] completion original index 4 (subset row 4)
+FWD : ████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒············································································································
+BWD : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█████████············································································································
+FIN : ████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█████████············································································································
+
+[DEBUG] completion original index 5 (subset row 5)
+FWD : ······▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒························································································································
+BWD : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒····································································································································
+FIN : ······▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒····································································································································
+
+[DEBUG] completion original index 6 (subset row 6)
+FWD : ████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒··························
+BWD : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒████··························
+FIN : ████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒████··························
+
+[DEBUG] completion original index 7 (subset row 7)
+FWD : ██████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒·······························································································································
+BWD : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒████████████·······························································································································
+FIN : ██████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒████████████·······························································································································
+Batch 0 – completions con conflitto attivo: [0, 1, 2, 3, 4, 5, 6, 7]
+   completion 0: adv=+  n_conflict=5
+   completion 1: adv=-  n_conflict=4
+   completion 2: adv=+  n_conflict=5
+   completion 3: adv=+  n_conflict=6
+   completion 4: adv=+  n_conflict=9
+   completion 5: adv=-  n_conflict=12
+   completion 6: adv=+  n_conflict=4
+   completion 7: adv=+  n_conflict=12
+[b=0] completion 0: grad_norm = 0.000370
+[b=0] completion 1: grad_norm = 0.001877
+[b=0] completion 2: grad_norm = 0.000334
+[b=0] completion 3: grad_norm = 0.000244
+[b=0] completion 4: grad_norm = 0.000203
+[b=0] completion 5: grad_norm = 0.000786
+[b=0] completion 6: grad_norm = 0.000391
+[b=0] completion 7: grad_norm = 0.000171
+{'loss': 0.0435, 'grad_norm': 0.19349125027656555, 'learning_rate': 2.6315789473684208e-08, 'rewards/final_reward': 1.375, 'reward': 1.375, 'completion_length': 2684.0, 'kl': 0.0, 'epoch': 0.0}
++++++++++++++++++ STEP: 2 +++++++++++++++++
+ ============   COMP - 1 =============
+COMPLETION: <reasoning>
+To solve this problem, let's reorganize the information and perform the calculations step by step.
+
+1. **Initial Snow Depth**:
+   Boston starts with 0.5 feet of snow on the first day.
+
+2. **Snow Depth on Second Day**:
+   At the second day, an additional 8 inches of snow is added. Since 1 foot = 12 inches:
+   \[
+   8 \text{ inches} = \frac{8}{12} \text{ feet} = \frac{2}{3} \text{ feet}
+   \]
+   Therefore, the total snow depth after the second day:
+   \[
+   0.5 \text{ feet} + \frac{2}{3} \text{ feet} = \frac{1}{2} \text{ feet} + \frac{2}{3} \text{ feet} = \frac{3}{6} \text{ feet} + \frac{4}{6} \text{ feet} = \frac{7}{6} \text{ feet} = 1.1667 \text{ feet}
+   \]
+
+3. **Snow Melting Over Two Days**:
+   After the third day, 2 inches of snow melts. Converting 2 inches to feet:
+   \[
+   2 \text{ inches} = \frac{2}{12} = \frac{1}{6} \text{ feet}
+   \]
+   New depth after melting:
+   \[
+   1.1667 \text{ feet} - \frac{1}{6} \text{ feet} = 1.1667 \text{ feet} - 0.1667 \text{ feet} = 1.0000 \text{ feet}
+   \]
+
+4. **Snow Depth on Fifth Day**:
+   On the fifth day, another 2 times the amount of snow they received on the first day melts, which is:
+   \[
+   2 \times 0.5 \text{ feet} = 1 \text{ foot}
+   \]
+   However, we haven’t calculated the depth after the third day yet, and we need to account for the depth after the third day after the melting:
+   \[
+   1.0000 \text{ feet} - 1 \text{ foot} = 0 \text{ feet}
+   \]
+
+Since the above shows that by the end of the fifth day, the snow depth is 0 feet (due to the total snow depth in the third day).
+</reasoning>
+<answer>
+The depth of snow in Boston now is 0 feet. </answer>
+ ERROR could not convert string to float: 'The depth of snow in Boston now is 0 feet.'
+    - Format Reward : 10.0
+    - Correctness R : 0.0
+    - Total Reward  : 10.0
++++++++++++++++++ STEP: 2 +++++++++++++++++
+ ============   COMP - 2 =============
+COMPLETION: To solve this problem, we need to convert all measurements to the same unit and track the snow accumulation over the specified days. Let's work through step by step:
+
+<reasoning>
+1. First, we start with .5 feet of snow on the first day. We convert .5 feet to inches because our other measurements are in inches: .5 feet = 6 inches.
+2. On the second day, they get an additional 8 inches, so:
+   6 inches (first day) + 8 inches (additional snow) = 14 inches.
+3. Over the next 2 days, 2 inches of snow melt, so:
+   14 inches - 2 inches = 12 inches.
+4. On the fifth day, they receive 2 times the amount of snow they got on the first day:
+   2 times 8 inches = 16 inches.
+5. Then we add the remaining snow from the previous day and the newly fallen snow:
+   12 inches (remaining) + 16 inches (newly fallen) = 28 inches.
+6. Now we need to convert 28 inches back into feet:
+   28 inches = \frac{28}{12} feet.
+</reasoning>
+
+<answer>
+\(28\) inches of snow is equivalent to \(\frac{28}{12}\) feet which simplifies to \(2\) feet and \(4\) inches. Therefore, the total amount of snow in feet is:
+<answer>
+2.33 feet
+</answer>
+ ERROR could not convert string to float: '\\(28\\) inches of snow is equivalent to \\(\\frac{28}{12}\\) feet which simplifies to \\(2\\) feet and \\(4\\) inches. Therefore, the total amount of snow in feet is:\n<answer>\n2.33 feet'
+    - Format Reward : 10.0
+    - Correctness R : 10.0
+    - Total Reward  : 20.0
++++++++++++++++++ STEP: 2 +++++++++++++++++
+ ============   COMP - 3 =============
+COMPLETION: Let's approach this step-by-step:
+
+<reasoning>
+1) First, let's convert all snow measurements to the same unit. There are 12 inches in a foot, so the initial 0.5 feet of snow is 0.5 * 12 = 6 inches.
+2) On the second day, an additional 8 inches were added. Adding this to the initial 6 inches gives us 6 + 8 = 14 inches.
+3) Over the next 2 days, 2 inches of snow melted. Subtracting this from 14 inches gives us 14 - 2 = 12 inches.
+4) On the fifth day, 2 times the amount of the initial day's snow fell. The initial day's snow was 6 inches, so 2 times this amount is 2 * 6 = 12 inches.
+5) Adding the snow from the fifth day to the remaining snow (12 inches) on fourth day gives us 12 + 12 = 24 inches.
+6) Finally, we convert 24 inches back to feet. 24 inches * 1/12 foot per inch = 2 feet.
+</reasoning>
+
+<answer>
+So, Boston now has 2 feet of snow.
+</answer>
+ ERROR could not convert string to float: 'So, Boston now has 2 feet of snow.'
+    - Format Reward : 10.0
+    - Correctness R : 10.0
+    - Total Reward  : 20.0
++++++++++++++++++ STEP: 2 +++++++++++++++++
+ ============   COMP - 4 =============
+COMPLETION: To solve this problem, let's break it down step by step:
+
+<reasoning>
+1. **Initial Snowfall on First Day:** We know that on the first day, Boston received 0.5 feet of snow.
+2. **Snowfall on the Second Day:** It was given that the next day, they got an additional 8 inches of snow.
+    - Since there are 12 inches in a foot, 8 inches is 8/12 feet.
+3. **Snow Melt Over the Next 2 Days:** It's mentioned that over the next 2 days, 2 inches of snow melted.
+    - 2 inches is 2/12 feet.
+4. **Snowfall on Fifth Day:** On the fifth day, they received another 2 times the amount of snow they received on the first day.
+    - 2 times 0.5 feet is 1 foot.
+5. **Convert All Units to Feets:** We will convert all snowfall and melting to inches to ensure all units are consistent before adding them. Later, we convert the result back to feet.
+6. **Remove Conversion Step:** Since we are anyways converting all snowfall and melting to inches, we’ll follow the steps but convert mostly at the end.
+
+**Calculations:**
+1. Add the snowfall on the first day to the additional snowfall on the second day:
+   \[ 0.5 \text{ feet} + \frac{8}{12} \text{ feet} = 0.5 + 0.6667 = 1.1667 \text{ feet} \]
+   \[ = 1.1667 \times 12 \text{ inches} = 14 \text{ inches} \]
+2. Subtract the melting snow:
+   \[ 14 \text{ inches} - 2 \text{ inches} = 12 \text{ inches} \]
+3. Add the additional snowfall on the fifth day:
+   \[ 12 \text{ inches} + 1 \times 12 \text{ inches} = 12 \text{ inches} + 12 \text{ inches} = 24 \text{ inches} \]
+4. Convert the total inches to feet:
+   \[ 24 \text{ inches} = 24 / 12 = 2 \text{ feet} \]
+
+</reasoning>
+
+<answer>
+2 feet of snow
+
+</answer>
+ ERROR could not convert string to float: '2 feet of snow'
+    - Format Reward : 10.0
+    - Correctness R : 10.0
+    - Total Reward  : 20.0
++++++++++++++++++ STEP: 2 +++++++++++++++++
+ ============   COMP - 5 =============
+COMPLETION: To solve this problem, I will break it down step by step.
+
+<reasoning>
+1. Convert all measurements to the same unit for consistency. Let's use feet throughout. Since 1 foot = 12 inches, the additional snow from the second day can be converted from inches to feet.
+2. Calculate the snowfall on each day and account for melting.
+3. Convert the Final snowfall amount to feet.
+
+First, convert the snowfall from the second day (8 inches) to feet. There are 12 inches in a foot, so:
+8 inches * (1 foot / 12 inches) = 0.666... feet or simply 2/3 feet.
+
+On the first day, Boston had 0.5 feet of snow.
+
+After the second day:
+Snow after the second day = 0.5 + 2/3 feet.
+Snow after the second day = 0.5 + 0.666... feet.
+Snow after the second day = 1.166... feet.
+
+From the third day to the fourth day, 2 inches of snow melted (0.166... feet). Subtract the melted snow:
+Snow after 2 days = 1.166... feet - 0.166... feet.
+Snow after 2 days = 1.000... feet.
+
+On the fifth day, they received 2 times the amount of snow they received on the first day. The first day they received 0.5 feet, so:
+Snow on the fifth day = 2 * 0.5 feet.
+Snow on the fifth day = 1.0 feet.
+
+Finally, add the snow from the fourth day and the fifth day together:
+Total snow = 1.000... feet + 1.0 feet.
+
+Now, convert the total snow amount to feet if necessary, but notice that all the previous quantities have resulted in feet, so we complete the calculation here.
+</reasoning>
+
+<answer>
+The total amount of snow now is 2.000... feet, which is equivalent to 2 feet.
+</answer>
+
+Thus, they now have 2 feet of snow. </answer>
+ ERROR could not convert string to float: 'The total amount of snow now is 2.000... feet, which is equivalent to 2 feet.\n</answer>\n\nThus, they now have 2 feet of snow.'
+    - Format Reward : 10.0
+    - Correctness R : 10.0
+    - Total Reward  : 20.0
++++++++++++++++++ STEP: 2 +++++++++++++++++
+ ============   COMP - 6 =============
+COMPLETION: To solve this problem, let's follow the sequence of events day by day and track the snow accumulation.
+
+<reasoning>
+- First Day: The initial snowfall is given as 0.5 feet.
+- Second Day: Additional snow is 8 inches, which we need to convert to feet. 1 foot = 12 inches, so 8 inches = 8/12 = 0.6667 feet.
+- Accumulated after two days: 0.5 + 0.6667 = 1.1667 feet
+- Next two days (melting): Over these days 2 inches of snow melted. We need to convert 2 inches to feet, which is 2/12 = 0.1667 feet, so the snow decreases by 0.1667 feet.
+- Snow after next two days: 1.1667 - 0.1667 = 1.0000 feet
+- Fifth Day: 2 times the amount of the first day, which is 2 * 0.5 = 1 foot.
+- Total snow after fifth day: 1.0000 + 1.0000 = 2.0000 feet
+</reasoning>
+
+<answer>
+Therefore, they now have 2.0000 feet of snow.
+</answer>
+ ERROR could not convert string to float: 'Therefore, they now have 2.0000 feet of snow.'
+    - Format Reward : 10.0
+    - Correctness R : 10.0
+    - Total Reward  : 20.0
++++++++++++++++++ STEP: 2 +++++++++++++++++
+ ============   COMP - 7 =============
+COMPLETION: To solve the given problem, let's break down the information and solve it step by step.
+
+<reasoning>
+1. **Initial Snowfall:** Boston initially had 0.5 feet of snow on the first day.
+2. **Second Day Snowfall:** Additional 8 inches of snow was added.
+   - Since 1 foot equals 12 inches, 8 inches equals 0.6667 feet.
+3. **Snow Melt:** During the next 2 days, 2 inches melted.
+   - Snow melted during these 2 days equals 2/12 or approximately 0.1667 feet.
+4. **Fifth Day Snowfall:** On the fifth day, they received an additional \( 2 \times 0.5 = 1.0 \) feet of snow.
+Now, we have all the information to calculate the total amount of snow.
+
+5. **Total Snowfall Calculation:**
+   - Initial snow (first day) + Additional snow (second consecutive day) + Additional snow (fifth day) - Snow Melt (second and third consecutive days)
+
+   Calculation:
+   - Initial snow (first day) = 0.5 feet
+   - Additional snow (second day) = 0.6667 feet
+   - Additional snow (fifth day) = 1.0 feet
+   - Snow Melt (second and third days) = 2/12 = 0.1667 feet
+
+   Total snowfall = 0.5 + 0.6667 + 1.0 - 0.1667
+</reasoning>
+
+<answer>
+Now, let's compute the total snowfall:
+   - Total snowfall = 0.5 + 0.6667 + 1.0 - 0.1667
+   - Total snowfall = 1.9667 feet
+</answer>
+
+Therefore, the total amount of snow Boston now has is 1.9667 feet.
+
+<answer>1.9667 feet</answer>
+ ERROR could not convert string to float: "Now, let's compute the total snowfall:\n   - Total snowfall = 0.5 + 0.6667 + 1.0 - 0.1667\n   - Total snowfall = 1.9667 feet\n</answer>\n\nTherefore, the total amount of snow Boston now has is 1.9667 feet. \n\n<answer>1.9667 feet"
+    - Format Reward : 10.0
+    - Correctness R : 0.0
+    - Total Reward  : 10.0
++++++++++++++++++ STEP: 2 +++++++++++++++++
+ ============   COMP - 8 =============
+COMPLETION: <reasoning>
+To find out how much snow Boston has now, we need to follow these steps:
+
+1. Convert all measurements to the same unit for ease of calculation. We will use feet.
+2. Add the initial snow amount to the additional snow received.
+3. Subtract the amount that melted.
+4. Multiply the initial snow amount by 2 for the amount received on the fifth day.
+5. Sum up all the snow amounts to get the final total.
+
+First, converting inches to feet:
+- Initial snow on the first day: .5 feet = 0.5 feet.
+- Additional snow received the next day: 8 inches = 8 / 12 feet = 2/3 feet.
+- Snow that melted: 2 inches = 2 / 12 feet = 1/6 feet.
+- Additional snow received on the fifth day: 2 times the initial snow, which is 2 * 0.5 feet = 1 foot.
+
+Next, adding the snow amounts:
+- Day 1: 0.5 feet
+- Day 2 additional: + 2/3 feet = 0.6667 feet
+- Days 3 and 4: -1/6 feet
+- Day 5 additional: +1 foot
+
+Let's add these:
+0.5 + 2/3 - 1/6 + 1.
+
+Let's calculate the sum:
+0.5 + 2/3 - 1/6 + 1 = (3/6) + (4/6) - (1/6) + 6/6 = (3/6 + 4/6 - 1/6 + 6/6) = (12/6 - 1/6) = 11/6 feet = 1.8333 feet = 1.8333 feet.
+
+Therefore, the final amount of snow is 1.8333 feet.
+
+</reasoning>
+<answer>
+1.8333 feet </answer>
+ ERROR could not convert string to float: '1.8333 feet'
+    - Format Reward : 10.0
+    - Correctness R : 0.0
+    - Total Reward  : 10.0
+REWARDS: tensor([10., 20., 20., 20., 20., 20., 10., 10.], device='cuda:0')
+MEAN : tensor([16.2500, 16.2500, 16.2500, 16.2500, 16.2500, 16.2500, 16.2500, 16.2500],
+       device='cuda:0')
+ORIGINAL ADVANTAGES : tensor([-6.2500,  3.7500,  3.7500,  3.7500,  3.7500,  3.7500, -6.2500, -6.2500],
+       device='cuda:0')
+COMPLETION MASK SUM : tensor([573, 326, 273, 528, 458, 297, 442, 424], device='cuda:0')
+Unsloth: Will smartly offload gradients to save VRAM!
+=============== EFFICIENT (CONFLICT INSIDE) ===============
+ENTROPIES : tensor([[0.4145, 0.5116, 0.4276, 0.5673, 0.6213, 0.4523, 0.4864, 0.4761]],
+       device='cuda:0')
+POS FLAGS : tensor([False,  True,  True,  True,  True,  True, False, False],
+       device='cuda:0')
+NEG FLAGS : tensor([ True, False, False, False, False, False,  True,  True],
+       device='cuda:0')
+
+[DEBUG] G = 8 L = 573
+[DEBUG] active_flags  : [True, True, True, True, True, True, True, True]
+[DEBUG] active_idx    : [0, 1, 2, 3, 4, 5, 6, 7]
+[DEBUG] pos_use       : [False, True, True, True, True, True, False, False]
+[DEBUG] neg_use       : [True, False, False, False, False, False, True, True]
+[DEBUG] conflict_raw (forward) shape: torch.Size([8, 573])
+[DEBUG] conflict_raw_rev shape: torch.Size([8, 573])
+
+[DEBUG] completion original index 0 (subset row 0)
+FWD : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+BWD : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒······
+FIN : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒······
+
+[DEBUG] completion original index 1 (subset row 1)
+FWD : ██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒·······················································································································································································································································
+BWD : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒████·······················································································································································································································································
+FIN : ██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒████·······················································································································································································································································
+
+[DEBUG] completion original index 2 (subset row 2)
+FWD : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒············································································································································································································································································································
+BWD : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒████············································································································································································································································································································
+FIN : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒████············································································································································································································································································································
+
+[DEBUG] completion original index 3 (subset row 3)
+FWD : ██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒·············································
+BWD : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒████·············································
+FIN : ██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒████·············································
+
+[DEBUG] completion original index 4 (subset row 4)
+FWD : ██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒···················································································································
+BWD : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█████···················································································································
+FIN : ██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█████···················································································································
+
+[DEBUG] completion original index 5 (subset row 5)
+FWD : ██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒····················································································································································································································································································
+BWD : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒████····················································································································································································································································································
+FIN : ██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒████····················································································································································································································································································
+
+[DEBUG] completion original index 6 (subset row 6)
+FWD : ··▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒···································································································································
+BWD : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒·······································································································································
+FIN : ··▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒·······································································································································
+
+[DEBUG] completion original index 7 (subset row 7)
+FWD : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒·····················································································································································
+BWD : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒·························································································································································
+FIN : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒·························································································································································
+Batch 0 – completions con conflitto attivo: [0, 1, 2, 3, 4, 5, 6, 7]
+   completion 0: adv=-  n_conflict=6
+   completion 1: adv=+  n_conflict=4
+   completion 2: adv=+  n_conflict=4
+   completion 3: adv=+  n_conflict=4
+   completion 4: adv=+  n_conflict=5
+   completion 5: adv=+  n_conflict=4
+   completion 6: adv=-  n_conflict=4
+   completion 7: adv=-  n_conflict=4
+[b=0] completion 0: grad_norm = 0.015625
+[b=0] completion 1: grad_norm = 0.023804
+[b=0] completion 2: grad_norm = 0.022339
+[b=0] completion 3: grad_norm = 0.017090
+[b=0] completion 4: grad_norm = 0.015747
+[b=0] completion 5: grad_norm = 0.022217
+[b=0] completion 6: grad_norm = 0.029785
+[b=0] completion 7: grad_norm = 0.030884
+{'loss': -0.3593, 'grad_norm': 6.633090972900391, 'learning_rate': 5.2631578947368416e-08, 'rewards/final_reward': 16.25, 'reward': 16.25, 'completion_length': 3321.0, 'kl': 0.0, 'epoch': 0.0}
++++++++++++++++++ STEP: 3 +++++++++++++++++
+ ============   COMP - 1 =============
+COMPLETION: <reasoning>
+To find out the original height of the tree when Kevin planted it, we need to determine what the height 50% taller than 180 inches is. We know that 180 inches is 50% taller than the original height, which means 180 inches is 150% of the original height. We can set up the following equation to solve for the original height, \( h \):
+
+\[ 150\% \cdot h = 180 \]
+
+To convert 150% to a decimal, we have:
+
+\[ 1.5 \cdot h = 180 \]
+
+Solving for \( h \):
+
+\[ h = \frac{180}{1.5} \]
+
+</reasoning>
+
+Now, let's do the calculation:
+<answer>
+\[ h = \frac{180}{1.5} = 120 \]
+</answer>
+
+Thus, when Kevin planted the tree, it was 120 inches tall.
+
+To convert this height from inches to feet, we know that 1 foot equals 12 inches. We can find the height in feet by dividing 120 inches by 12:
+<answer>
+\[ 120 \, \text{inches} = 10 \, \text{feet} \]
+</answer>
+
+To verify:
+\[ 10 \, \text{feet} \times 12 \, \text{inches/foot} = 120 \, \text{inches} \]
+
+Therefore, the tree was 10 feet tall when Kevin planted it.
+</answer>
+ ERROR could not convert string to float: '\\[ h = \\frac{180}{1.5} = 120 \\]\n</answer>\n\nThus, when Kevin planted the tree, it was 120 inches tall.\n\nTo convert this height from inches to feet, we know that 1 foot equals 12 inches. We can find the height in feet by dividing 120 inches by 12:\n<answer>\n\\[ 120 \\, \\text{inches} = 10 \\, \\text{feet} \\]\n</answer>\n\nTo verify:\n\\[ 10 \\, \\text{feet} \\times 12 \\, \\text{inches/foot} = 120 \\, \\text{inches} \\]\n\nTherefore, the tree was 10 feet tall when Kevin planted it.'
+    - Format Reward : 10.0
+    - Correctness R : 10.0
+    - Total Reward  : 20.0
++++++++++++++++++ STEP: 3 +++++++++++++++++
+ ============   COMP - 2 =============
+COMPLETION: To determine the original height of the tree, let's denote the original height of the tree as \( x \) inches. According to the problem, the current height of 180 inches is 50% taller than the original height. This can be represented by the equation:
+\[ 180 = x + 0.5x \]
+\[ 180 = 1.5x \]
+
+Now, we need to solve for \( x \):
+\[ x = \frac{180}{1.5} \]
+\[ x = 120 \]
+
+So, the original height of the tree was 120 inches. To convert this height to feet, we use the fact that 12 inches is equal to 1 foot:
+\[ \text{Height in feet} = \frac{120 \text{ inches}}{12 \text{ inches/foot}} \]
+\[ \text{Height in feet} = 10 \]
+
+<answer>10 feet</answer>
+    - Format Reward : 1.0
+    - Correctness R : 0
+    - Total Reward  : 1.0
++++++++++++++++++ STEP: 3 +++++++++++++++++
+ ============   COMP - 3 =============
+COMPLETION: <reasoning>
+To determine the initial height of the tree when Kevin planted it, we can set up an equation based on the information given. Let's denote the initial height of the tree as \( h \). According to the problem, the current height (180 inches) is 50% taller than the initial height. This implies that if we add 50% of \( h \) to \( h \), we will get the current height.
+
+The equation for the current height can be written as:
+\[ h + 0.5h = 180 \]
+\[ 1.5h = 180 \]
+
+Next, we solve for \( h \) to find the initial height:
+\[ h = \frac{180}{1.5} \]
+
+Finally, we convert the initial height from inches to feet since the answer is required in feet. There are 12 inches in a foot, so we calculate:
+\[ h_{\text{feet}} = \frac{h}{12} \]
+
+</reasoning>
+<answer>
+To find the initial height of the tree in feet, we proceed as follows:
+\[ h = \frac{180}{1.5} = 120 \text{ inches} \]
+\[ h_{\text{feet}} = \frac{120}{12} = 10 \text{ feet} \]
+
+Therefore, the tree was 10 feet tall when Kevin planted it.
+</answer>
+ ERROR could not convert string to float: 'To find the initial height of the tree in feet, we proceed as follows:\n\\[ h = \\frac{180}{1.5} = 120 \\text{ inches} \\]\n\\[ h_{\\text{feet}} = \\frac{120}{12} = 10 \\text{ feet} \\]\n\nTherefore, the tree was 10 feet tall when Kevin planted it.'
+    - Format Reward : 10.0
+    - Correctness R : 10.0
+    - Total Reward  : 20.0
++++++++++++++++++ STEP: 3 +++++++++++++++++
+ ============   COMP - 4 =============
+COMPLETION: To solve this problem, let's start by setting up an equation that represents the height of the tree when it was planted and later, when it reached 180 inches tall.
+
+<reasoning>
+Let's denote the height of the tree when it was first planted (before it grew to 180 inches) as \( h \) inches. According to the problem, the current height of 180 inches is 50% taller than the initial height \( h \). The relationship between the initial height \( h \) and the current height can be written as:
+\[ 180 = h + 0.5h \]
+\[ 180 = 1.5h \]
+From this equation, we can solve for \( h \).
+</reasoning>
+
+<calculations>
+Solving the equation \( 180 = 1.5h \) gives:
+\[ h = \frac{180}{1.5} \]
+\[ h = 120 \]
+So, the tree was 120 inches tall when Kevin planted it.
+</calculations>
+
+<final-step>
+To convert the height from inches to feet (since we need to express the answer in feet), we note that there are 12 inches in a foot. Therefore, we divide the height in inches by 12:
+\[ 120 \text{ inches} = \frac{120}{12} \text{ feet} = 10 \text{ feet} \]
+</final-step>
+
+Therefore, the tree was 10 feet tall when Kevin planted it.
+
+<answer>10 feet</answer>
+ ERROR could not convert string to float: '10 feet'
+    - Format Reward : 10.0
+    - Correctness R : 10.0
+    - Total Reward  : 20.0
++++++++++++++++++ STEP: 3 +++++++++++++++++
+ ============   COMP - 5 =============
+COMPLETION: <reasoning>
+To find the original height of the tree, we start by letting \( h \) represent the height when Kevin planted the tree. If the current height is 180 inches and that is 50% taller than when it was planted, we can set up the following equation:
+\[ 180 = h + 0.5h \]
+\[ 180 = 1.5h \]
+Solving for \( h \):
+\[ h = \frac{180}{1.5} \]
+\[ h = 120 \]
+So, the tree was 120 inches tall when Kevin planted it. Since we need the height in feet, we convert 120 inches to feet. We know that 1 foot is equal to 12 inches, and hence, \( 120 \div 12 = 10 \) feet.
+</reasoning>
+<answer>
+10 feet
+</answer>
+ ERROR could not convert string to float: '10 feet'
+    - Format Reward : 10.0
+    - Correctness R : 10.0
+    - Total Reward  : 20.0
++++++++++++++++++ STEP: 3 +++++++++++++++++
+ ============   COMP - 6 =============
+COMPLETION: <reasoning>
+To find out how tall the tree was when Kevin planted it, we first calculate the original height in inches. If the tree is currently 50% taller than it was planted, we can use the following proportion:
+
+\[ \text{Current Height} = \text{Original Height} + 0.5(\text{Original Height}) \]
+\[ \text{Current Height} = 1.5(\text{Original Height}) \]
+
+Given that the current height is 180 inches, we can rearrange the equation to solve for the original height:
+\[ 1.5(\text{Original Height}) = 180 \]
+\[ \text{Original Height} = \frac{180}{1.5} \]
+
+Next, we can convert this height from inches to feet by dividing by 12, as there are 12 inches in a foot.
+
+</reasoning>
+<answer>
+\[ 180 \div 1.5 = 120 \text{ inches} \]
+\[ 120 \div 12 = 10 \text{ feet} \]
+</answer>
+ ERROR could not convert string to float: '\\[ 180 \\div 1.5 = 120 \\text{ inches} \\]\n\\[ 120 \\div 12 = 10 \\text{ feet} \\]'
+    - Format Reward : 10.0
+    - Correctness R : 10.0
+    - Total Reward  : 20.0
++++++++++++++++++ STEP: 3 +++++++++++++++++
+ ============   COMP - 7 =============
+COMPLETION: <reasoning>
+To find out how tall the tree was when Kevin planted it, we need to first determine its height before it grew 50% taller. We can use the information provided to set up an equation.
+
+Let \( x \) be the height of the tree when it was planted. According to the problem, the current height of the tree (180 inches) is 50% taller than its original height. We can express this mathematically as:
+\[ 1.5x = 180 \]
+
+We can solve this equation for \( x \):
+\[ x = \frac{180}{1.5} \]
+
+We can then convert the height \( x \) from inches to feet, knowing that 1 foot consists of 12 inches.
+</reasoning>
+
+<answer>
+First, solve the equation by finding \( x \):
+\[ x = \frac{180}{1.5} = 120 \text{ inches} \]
+
+Now convert 120 inches to feet:
+\[ 120 \text{ inches} = \frac{120}{12} \text{ feet} = 10 \text{ feet} \]
+
+Therefore, the tree was 10 feet tall when Kevin planted it.
+</answer>
+ ERROR could not convert string to float: 'First, solve the equation by finding \\( x \\):\n\\[ x = \\frac{180}{1.5} = 120 \\text{ inches} \\]\n\nNow convert 120 inches to feet:\n\\[ 120 \\text{ inches} = \\frac{120}{12} \\text{ feet} = 10 \\text{ feet} \\]\n\nTherefore, the tree was 10 feet tall when Kevin planted it.'
+    - Format Reward : 10.0
+    - Correctness R : 10.0
+    - Total Reward  : 20.0
++++++++++++++++++ STEP: 3 +++++++++++++++++
+ ============   COMP - 8 =============
+COMPLETION: <reasoning>
+To find out how tall the tree was when Kevin planted it, we need to determine the original height in inches and then convert that to feet. If the current height of the tree is 50% taller than its original height, we can use this information to calculate the height 50% taller than the original.
+
+First, we need to determine the original height. We know the tree is 180 inches tall, which is 50% taller than it was when planted. Let 'x' be the original height in inches. The tree is 50% taller than 'x':
+\[ 180 = x + 0.5x \]
+\[ 180 = 1.5x \]
+
+Next, we solve for 'x':
+\[ x = \frac{180}{1.5} \]
+
+Then, we convert the original height 'x' from inches to feet by dividing by 12 (as there are 12 inches in a foot) and giving the result to the nearest whole number since tree heights are typically given as whole numbers in feet.
+</reasoning>
+<answer>
+24 inches
+</answer>
+</reasoning>
+<answer>
+2
+</answer>
+</reasoning>
+    - Format Reward : 1.5
+    - Correctness R : 0
+    - Total Reward  : 1.5
+REWARDS: tensor([20.0000,  1.0000, 20.0000, 20.0000, 20.0000, 20.0000, 20.0000,  1.5000],
+       device='cuda:0')
+MEAN : tensor([15.3125, 15.3125, 15.3125, 15.3125, 15.3125, 15.3125, 15.3125, 15.3125],
+       device='cuda:0')
+ORIGINAL ADVANTAGES : tensor([  4.6875, -14.3125,   4.6875,   4.6875,   4.6875,   4.6875,   4.6875,
+        -13.8125], device='cuda:0')
+COMPLETION MASK SUM : tensor([355, 216, 317, 348, 206, 243, 274, 263], device='cuda:0')
+=============== EFFICIENT (CONFLICT INSIDE) ===============
+ENTROPIES : tensor([[0.3593, 0.2504, 0.3153, 0.3653, 0.3709, 0.3036, 0.3821, 0.5242]],
+       device='cuda:0')
+POS FLAGS : tensor([ True, False,  True,  True,  True,  True,  True, False],
+       device='cuda:0')
+NEG FLAGS : tensor([False,  True, False, False, False, False, False,  True],
+       device='cuda:0')
+
+[DEBUG] G = 8 L = 355
+[DEBUG] active_flags  : [True, True, True, True, True, True, True, True]
+[DEBUG] active_idx    : [0, 1, 2, 3, 4, 5, 6, 7]
+[DEBUG] pos_use       : [True, False, True, True, True, True, True, False]
+[DEBUG] neg_use       : [False, True, False, False, False, False, False, True]
+[DEBUG] conflict_raw (forward) shape: torch.Size([8, 355])
+[DEBUG] conflict_raw_rev shape: torch.Size([8, 355])
+
+[DEBUG] completion original index 0 (subset row 0)
+FWD : ███████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+BWD : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒████
+FIN : ███████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒████
+
+[DEBUG] completion original index 1 (subset row 1)
+FWD : ·▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒···········································································································································
+BWD : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒·····················································································································································
+FIN : ·▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒·····················································································································································
+
+[DEBUG] completion original index 2 (subset row 2)
+FWD : █████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒······································
+BWD : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒████······································
+FIN : █████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒████······································
+
+[DEBUG] completion original index 3 (subset row 3)
+FWD : █▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒·······
+BWD : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██████████·······
+FIN : █▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██████████·······
+
+[DEBUG] completion original index 4 (subset row 4)
+FWD : ███████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒·····················································································································································
+BWD : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒████·····················································································································································
+FIN : ███████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒████·····················································································································································
+
+[DEBUG] completion original index 5 (subset row 5)
+FWD : ██████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒················································································································
+BWD : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒████················································································································
+FIN : ██████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒████················································································································
+
+[DEBUG] completion original index 6 (subset row 6)
+FWD : ████████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒·················································································
+BWD : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒████·················································································
+FIN : ████████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒████·················································································
+
+[DEBUG] completion original index 7 (subset row 7)
+FWD : ····················▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒····························································································
+BWD : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒······························································································
+FIN : ····················▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒······························································································
+Batch 0 – completions con conflitto attivo: [0, 1, 2, 3, 4, 5, 6, 7]
+   completion 0: adv=+  n_conflict=7
+   completion 1: adv=-  n_conflict=10
+   completion 2: adv=+  n_conflict=5
+   completion 3: adv=+  n_conflict=10
+   completion 4: adv=+  n_conflict=7
+   completion 5: adv=+  n_conflict=18
+   completion 6: adv=+  n_conflict=20
+   completion 7: adv=-  n_conflict=20
+[b=0] completion 0: grad_norm = 0.012695
+[b=0] completion 1: grad_norm = 0.026978
+[b=0] completion 2: grad_norm = 0.015076
+[b=0] completion 3: grad_norm = 0.010010
+[b=0] completion 4: grad_norm = 0.016357
+[b=0] completion 5: grad_norm = 0.005859
+[b=0] completion 6: grad_norm = 0.005005
+[b=0] completion 7: grad_norm = 0.017578
+{'loss': -1.3613, 'grad_norm': 2.794008255004883, 'learning_rate': 7.894736842105262e-08, 'rewards/final_reward': 15.3125, 'reward': 15.3125, 'completion_length': 2222.0, 'kl': 0.0029072153847664595, 'epoch': 0.0}
+  File "/ssd1/marco.simoni/VULNERABILITY/GTPO/train_model.py", line 506, in <module>
+    main()
+  File "/ssd1/marco.simoni/VULNERABILITY/GTPO/train_model.py", line 502, in main
+    train(cfg)
+  File "/ssd1/marco.simoni/VULNERABILITY/GTPO/train_model.py", line 384, in train
+    trainer.train()
+  File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/transformers/trainer.py", line 2241, in train
+    return inner_training_loop(
+  File "<string>", line 306, in _fast_inner_training_loop
+  File "<string>", line 25, in _unsloth_training_step
+  File "/ssd1/marco.simoni/VULNERABILITY/GTPO/gtpo/gtpo_training.py", line 1227, in _prepare_inputs
+    outputs = self.llm.generate(all_prompts_text, sampling_params=self.sampling_params, use_tqdm=False, lora_request = self.model.load_lora('grpo_trainer_lora_model', load_tensors = True))
+  File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/utils.py", line 1057, in inner
+    return fn(*args, **kwargs)
+  File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/entrypoints/llm.py", line 469, in generate
+    outputs = self._run_engine(use_tqdm=use_tqdm)
+  File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/entrypoints/llm.py", line 1397, in _run_engine
+    step_outputs = self.llm_engine.step()
+  File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/engine/llm_engine.py", line 1391, in step
+    outputs = self.model_executor.execute_model(
+  File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/executor/executor_base.py", line 139, in execute_model
+    output = self.collective_rpc("execute_model",
+  File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/executor/uniproc_executor.py", line 56, in collective_rpc
+    answer = run_method(self.driver_worker, method, args, kwargs)
+  File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/utils.py", line 2196, in run_method
+    return func(*args, **kwargs)
+  File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/worker/worker_base.py", line 420, in execute_model
+    output = self.model_runner.execute_model(
+  File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/worker/model_runner.py", line 1782, in execute_model
+    output: SamplerOutput = self.model.sample(
+  File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/model_executor/models/qwen2.py", line 505, in sample
+    next_tokens = self.sampler(logits, sampling_metadata)
+  File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/model_executor/layers/sampler.py", line 287, in forward
+    maybe_deferred_sample_results, maybe_sampled_tokens_tensor = _sample(
+  File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/model_executor/layers/sampler.py", line 775, in _sample
+    return _sample_with_torch(
+  File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/model_executor/layers/sampler.py", line 744, in _sample_with_torch
+    return get_pythonized_sample_results(
+  File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/model_executor/layers/sampler.py", line 616, in get_pythonized_sample_results
+    sample_results = _random_sample(seq_groups,
+  File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/model_executor/layers/sampler.py", line 485, in _random_sample
+    random_samples = random_samples.cpu()
+KeyboardInterrupt
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/ssd1/marco.simoni/VULNERABILITY/GTPO/train_model.py", line 506, in <module>
+[rank0]:     main()
+[rank0]:   File "/ssd1/marco.simoni/VULNERABILITY/GTPO/train_model.py", line 502, in main
+[rank0]:     train(cfg)
+[rank0]:   File "/ssd1/marco.simoni/VULNERABILITY/GTPO/train_model.py", line 384, in train
+[rank0]:     trainer.train()
+[rank0]:   File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/transformers/trainer.py", line 2241, in train
+[rank0]:     return inner_training_loop(
+[rank0]:   File "<string>", line 306, in _fast_inner_training_loop
+[rank0]:   File "<string>", line 25, in _unsloth_training_step
+[rank0]:   File "/ssd1/marco.simoni/VULNERABILITY/GTPO/gtpo/gtpo_training.py", line 1227, in _prepare_inputs
+[rank0]:     outputs = self.llm.generate(all_prompts_text, sampling_params=self.sampling_params, use_tqdm=False, lora_request = self.model.load_lora('grpo_trainer_lora_model', load_tensors = True))
+[rank0]:   File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/utils.py", line 1057, in inner
+[rank0]:     return fn(*args, **kwargs)
+[rank0]:   File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/entrypoints/llm.py", line 469, in generate
+[rank0]:     outputs = self._run_engine(use_tqdm=use_tqdm)
+[rank0]:   File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/entrypoints/llm.py", line 1397, in _run_engine
+[rank0]:     step_outputs = self.llm_engine.step()
+[rank0]:   File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/engine/llm_engine.py", line 1391, in step
+[rank0]:     outputs = self.model_executor.execute_model(
+[rank0]:   File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/executor/executor_base.py", line 139, in execute_model
+[rank0]:     output = self.collective_rpc("execute_model",
+[rank0]:   File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/executor/uniproc_executor.py", line 56, in collective_rpc
+[rank0]:     answer = run_method(self.driver_worker, method, args, kwargs)
+[rank0]:   File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/utils.py", line 2196, in run_method
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/worker/worker_base.py", line 420, in execute_model
+[rank0]:     output = self.model_runner.execute_model(
+[rank0]:   File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/worker/model_runner.py", line 1782, in execute_model
+[rank0]:     output: SamplerOutput = self.model.sample(
+[rank0]:   File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/model_executor/models/qwen2.py", line 505, in sample
+[rank0]:     next_tokens = self.sampler(logits, sampling_metadata)
+[rank0]:   File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/model_executor/layers/sampler.py", line 287, in forward
+[rank0]:     maybe_deferred_sample_results, maybe_sampled_tokens_tensor = _sample(
+[rank0]:   File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/model_executor/layers/sampler.py", line 775, in _sample
+[rank0]:     return _sample_with_torch(
+[rank0]:   File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/model_executor/layers/sampler.py", line 744, in _sample_with_torch
+[rank0]:     return get_pythonized_sample_results(
+[rank0]:   File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/model_executor/layers/sampler.py", line 616, in get_pythonized_sample_results
+[rank0]:     sample_results = _random_sample(seq_groups,
+[rank0]:   File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/model_executor/layers/sampler.py", line 485, in _random_sample
+[rank0]:     random_samples = random_samples.cpu()
+[rank0]: KeyboardInterrupt

@@ -60,7 +60,7 @@ training:
   logging_steps: 1
   per_device_train_batch_size: 1
   gradient_accumulation_steps: 1
-  num_generations: "8/12"
+  num_generations: "8" #12
   num_train_epochs: 1
   num_iterations: 1
   save_steps: 500
@@ -71,3 +71,19 @@ trainer:
   class_path: "gtpo.gtpo_training.UnslothGTPOTrainer"
   reward_funcs:
     - "reward_math.final_reward"
+
+gtpo_runtime:
+  # ---- conflict & entropy knobs ----
+  ent_threshold: 0.7      # ENT_THRESHOLD
+  ent_scale: 0.1          # ENT_SCALE
+  w_raw: 2.0              # W_RAW
+  pad_id: 128004          # PAD_ID
+  eps: 1.0e-6             # EPS
+
+  # ---- torch.compile options used by selective_log_softmax ----
+  torch_compile_options:
+    epilogue_fusion: true
+    max_autotune: false
+    shape_padding: true
+    "trace.enabled": false
+    "triton.cudagraphs": false
