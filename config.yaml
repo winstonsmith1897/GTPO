@@ -1,35 +1,73 @@
-model_name: "meta-llama/meta-Llama-3.1-8B-Instruct" #"unsloth/phi-4-unsloth-bnb-4bit" #"meta-llama/meta-Llama-3.1-8B-Instruct" #"Pairwise-Dataset_gen12_bs1_len8000_lr1e-6_BetaKL0.0001"  #"meta-llama/meta-Llama-3.1-8B-Instruct"
-max_seq_length: 5500
-max_prompt_length: 4000
-lora_rank: 128
-load_in_4bit: true
-gpu_memory_utilization: 0.4
-target_modules:
-  - "q_proj"
-  - "k_proj"
-  - "v_proj"
-  - "o_proj"
-  - "gate_proj"
-  - "up_proj"
-  - "down_proj"
-random_seed: 3407
-# dataset_path: "DiverseVul-Split-Balanced"
-balance_chunk_size: 2000
+run_name: "GTPO_LLAMA8B_MATH"
 
-warmup_ratio: 0.005
-learning_rate: 1e-6
-adam_beta1: 0.9 #99999
-adam_beta2: 0.95 #99999
-weight_decay: 0.1
-beta: 0.0
-lr_scheduler_type: "cosine"
-optimizer: "paged_adamw_8bit"
-logging_steps: 1
-per_device_train_batch_size: 1
-gradient_accumulation_steps: 1
-num_generations: 8
-num_train_epochs: 2
-num_iterations: 1
-save_steps: 500
-max_grad_norm: 0.1
-report_to: ["wandb"]
+env:
+  CUDA_VISIBLE_DEVICES: "5"
+
+model:
+  model_name: "meta-llama/meta-Llama-3.1-8B-Instruct"   # override with --model-name
+  max_seq_length: 5500
+  max_prompt_length: 4000
+  lora_rank: 128
+  load_in_4bit: true
+  gpu_memory_utilization: 0.4
+  target_modules:
+    - "q_proj"
+    - "k_proj"
+    - "v_proj"
+    - "o_proj"
+    - "gate_proj"
+    - "up_proj"
+    - "down_proj"
+  random_seed: 3407
+
+# dataset:
+#   # Dataset selector (overridable with --dataset-name)
+#   name: "gsm8k"                         # "gsm8k" | "hendrycks_math"
+#   subset: "main"                        # for GSM8K; overridable with --dataset-subset
+#   split: "train"                        # overridable with --dataset-split
+#   # System instruction used to build the conversation prompt
+#   system_instruction: >
+#     You are a helpful assistant for solving math problems. Given a question,
+#     first think step by step between <reasoning> and </reasoning>. Then, give
+#     the final answer between <answer> and </answer>.
+
+dataset:
+  name: "hendrycks_math"                                 # alias: "math"
+  # You can pass subsets from CLI with repeated --dataset-subset flags
+  subsets:
+    - "algebra"
+    - "geometry"
+    - "counting_and_probability"
+    - "number_theory"
+    - "intermediate_algebra"
+    - "prealgebra"
+    - "precalculus"
+  system_instruction: >
+    You are a helpful assistant for solving math problems. Given a question,
+    first think step by step between <reasoning> and </reasoning>. Then, give
+    the final answer between <answer> and </answer>.
+
+training:
+  max_prompt_length: 4000
+  warmup_ratio: 0.005
+  learning_rate: 1e-6
+  adam_beta1: 0.999999
+  adam_beta2: 0.999999
+  weight_decay: 0.1
+  beta: 0.0
+  lr_scheduler_type: "cosine"
+  optimizer: "paged_adamw_8bit"
+  logging_steps: 1
+  per_device_train_batch_size: 1
+  gradient_accumulation_steps: 1
+  num_generations: "8/12"
+  num_train_epochs: 2
+  num_iterations: 1
+  save_steps: 500
+  max_grad_norm: 0.1
+  report_to: ["wandb"]
+
+trainer:
+  class_path: "algorithms.gtpo_training.UnslothGTPOTrainer"
+  reward_funcs:
+    - "reward_math.scaled_adaptive_reward_func"
