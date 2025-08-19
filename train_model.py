@@ -3,7 +3,7 @@
 
 import os
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "1"
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 from unsloth import FastLanguageModel, PatchFastRL
 import argparse
