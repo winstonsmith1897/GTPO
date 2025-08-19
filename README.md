@@ -40,6 +40,8 @@ GTPO introduces **conflict-aware gradient corrections** and **entropy-based regu
 - Out-of-distribution evaluation on **AIME 2024** shows significant improvements in reasoning generalization.  
 
 ![In-Distribution](images/In-Distribution.png)
+![Out-of-Dsitribution](images/Out-of-Distribution.png)
+
 ---
 
 ## ⚙️ Installation
