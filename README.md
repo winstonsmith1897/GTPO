@@ -56,48 +56,326 @@ Install dependencies:
 pip install -r requirements.txt
 ```
 
+# GTPO Training Guide
+
+This guide explains how to train with **`train_model.py`** using a YAML configuration file and **command-line overrides** for quick experimentation. All comments and messages are in English.
+
+---
+
+## 📦 What’s in this repo
+
+- **`train_model.py`** – single entrypoint that:
+  - loads **model**, **dataset**, **trainer**, **rewards**, and **training args** from a YAML file;
+  - allows **CLI overrides** for model and dataset (and a few extras);
+  - patches Unsloth RL, launches training, and saves **LoRA adapters**.
+- **`config.yaml`** – your configurable training recipe (model, dataset, training, trainer, GTPO runtime knobs).
+
+---
+
+## ⚡ Quick Start
+
+```bash
+python train_model.py config.yaml
+```
+
+This will read **everything** from `config.yaml` and start training.
+
+If you want to override the model and dataset **from the CLI**:
+
+```bash
+python train_model.py config.yaml \
+  --model-name "meta-llama/meta-Llama-3.1-8B-Instruct" \
+  --dataset-name hendrycks_math
+```
+
+> CLI overrides always take precedence over values in the YAML.
+
+---
+
+## 🧩 Files & Flow
+
+1. **Patch RL** with Unsloth (`PatchFastRL("GRPO", FastLanguageModel)`).
+2. **Load model & tokenizer** with LoRA settings from YAML `model` section.
+3. **Load & format dataset** from YAML `dataset` section (GSM8K or Hendrycks MATH).
+4. **Apply GTPO runtime overrides** (entropy knobs, PAD_ID, torch.compile options).
+5. **Build GRPO/GTPO arguments** from YAML `training` section.
+6. **Import trainer & rewards** from dotted paths in YAML `trainer` section.
+7. **Train** and save LoRA adapters into a descriptive `output_dir` built from config fields.
+
+---
+
+## 🧾 YAML Schema (minimal reference)
+
+```yaml
+run_name: "GTPO_LLAMA8B_MATH"
+
+env:
+  CUDA_VISIBLE_DEVICES: "5"
+
+model:
+  model_name: "meta-llama/meta-Llama-3.1-8B-Instruct"
+  max_seq_length: 5500
+  max_prompt_length: 4000        # (informational; see training.max_prompt_length)
+  lora_rank: 128
+  load_in_4bit: true
+  gpu_memory_utilization: 0.4
+  target_modules: ["q_proj","k_proj","v_proj","o_proj","gate_proj","up_proj","down_proj"]
+  random_seed: 3407
+
+dataset:
+  name: "hendrycks_math"         # "hendrycks_math" | "gsm8k"
+  subsets:                        # for hendrycks_math
+    - "algebra"
+    - "geometry"
+    - "counting_and_probability"
+    - "number_theory"
+    - "intermediate_algebra"
+    - "prealgebra"
+    - "precalculus"
+  # For GSM8K you would use:
+  # name: "gsm8k"
+  # subset: "main"
+  # split: "train"
+  system_instruction: >
+    You are a helpful assistant for solving math problems.
+    Given a question, first think step by step between <reasoning> and </reasoning>.
+    Then, give the final answer between <answer> and </answer>.
+
+training:
+  max_prompt_length: 4000         # used to filter prompts & compute max completion length
+  warmup_ratio: 0.005
+  learning_rate: 1e-6
+  adam_beta1: 0.999999
+  adam_beta2: 0.999999
+  weight_decay: 0.1
+  beta: 0.0
+  lr_scheduler_type: "cosine"
+  optimizer: "paged_adamw_8bit"
+  logging_steps: 1
+  per_device_train_batch_size: 1
+  gradient_accumulation_steps: 1
+  num_generations: "8"            # supports "8/12" -> picks the first number
+  num_train_epochs: 1
+  num_iterations: 1               # informational (not used by TRL directly)
+  save_steps: 500
+  max_grad_norm: 0.1
+  report_to: ["wandb"]
+
+trainer:
+  class_path: "gtpo.gtpo_training.UnslothGTPOTrainer"
+  reward_funcs:
+    - "reward_math.final_reward"
+
+gtpo_runtime:
+  ent_threshold: 0.7
+  ent_scale: 0.1
+  w_raw: 2.0
+  pad_id: 128004
+  eps: 1.0e-6
+  torch_compile_options:
+    epilogue_fusion: true
+    max_autotune: false
+    shape_padding: true
+    "trace.enabled": false
+    "triton.cudagraphs": false
+```
+
+### Notes on keys
+- **`training.max_prompt_length`** is the value used to filter prompts and compute `max_completion_length = model.max_seq_length - training.max_prompt_length`.
+- Keep `training.max_prompt_length <= model.max_prompt_length <= model.max_seq_length` to avoid truncation or OOMs.
+- **`trainer.class_path`** and **`trainer.reward_funcs`** are **dotted paths** importable from Python (dynamic imports).
+- **`gtpo_runtime`** overrides attributes in `gtpo.gtpo_training` at runtime (e.g., `ENT_THRESHOLD`, `PAD_ID`, etc.).
+
 ---
 
 ## 🏋️ Training
 
-Example training script with GTPO:
+Example training script with **GTPO**:
 
 ```bash
-python train.py \
-  --model llama-8b \
-  --dataset gsm8k \
-  --optimizer adam \
-  --lr 1e-6 \
-  --epochs 3 \
-  --batch_size 2 \
-  --generation_size 12 \
-  --use_gtpo
+python train_model.py config.yaml \
+  --model-name "meta-llama/meta-Llama-3.1-8B-Instruct" \
+  --dataset-name hendrycks_math \
+  --run-name "GTPO_Llama8B_MATH_run"
 ```
 
-Options:
+Options (CLI overrides supported by `train_model.py`):
 
-* `--use_grpo` : Train with GRPO baseline
-* `--use_sft`  : Train with SFT baseline
-* `--generation_size` : Number of completions per group (e.g., 8 or 12)
+* `--model-name` : Override the base model (e.g., `Qwen/Qwen2.5-3B-Instruct`).
+* `--dataset-name` : Choose dataset (`gsm8k` | `hendrycks_math` | `math` alias).
+* `--dataset-subset` : For **MATH**, repeat flag to provide multiple subsets (e.g., `--dataset-subset algebra --dataset-subset geometry`). For **GSM8K**, the first value becomes `dataset.subset` (default `main`).
+* `--dataset-split` : Choose split (`train`, `validation`, `test`), mainly for GSM8K.
+* `--cuda` : Override `CUDA_VISIBLE_DEVICES` (e.g., `--cuda 0`).
+* `--run-name` : Override `run_name` used in the output directory prefix.
 
 ---
 
-## 📂 Repository Structure
+## 🍱 Dataset Recipes
 
+### GSM8K (main split)
+
+```bash
+python train_model.py config.yaml \
+  --dataset-name gsm8k \
+  --dataset-split train \
+  --run-name "GTPO_Llama8B_GSM8K"
 ```
-GTPO/
-│── gtpo/               # Core GTPO implementation
-│── scripts/            # Training and evaluation scripts
-│── configs/            # Example configurations
-│── data/               # Dataset preprocessing utilities
-│── results/            # Experimental results and logs
-│── requirements.txt    # Dependencies
-│── train.py            # Entry point for training
-│── eval.py             # Evaluation scripts
-└── README.md           # This file
+
+GSM8K answer extraction prefers the final line after `####`; otherwise tries `###` or the last token as a fallback.
+
+### Hendrycks MATH (all standard subsets)
+
+```bash
+python train_model.py config.yaml \
+  --dataset-name hendrycks_math \
+  --run-name "GTPO_Llama8B_MATH_ALL"
+```
+
+### Hendrycks MATH (specific subsets only)
+
+```bash
+python train_model.py config.yaml \
+  --dataset-name hendrycks_math \
+  --dataset-subset algebra \
+  --dataset-subset geometry \
+  --dataset-subset number_theory \
+  --run-name "GTPO_Llama8B_MATH_AGN"
+```
+
+> Internally, the script concatenates the selected subsets and then filters examples whose prompt tokenization would exceed `training.max_prompt_length`.
+
+---
+
+## 🔧 Trainer & Rewards
+
+Both are dynamically imported from **dotted paths**:
+
+```yaml
+trainer:
+  class_path: "gtpo.gtpo_training.UnslothGTPOTrainer"
+  reward_funcs:
+    - "reward_math.final_reward"
+```
+
+Swap to a different trainer or add multiple rewards by listing more import paths:
+
+```yaml
+trainer:
+  class_path: "custom_trainer.original.UnslothGRPOTrainer"
+  reward_funcs:
+    - "reward_math.scaled_adaptive_reward_func"
+    - "reward_math.formatting_penalty"
+```
+
+> The script builds a list of callables from `reward_funcs` and passes them to the trainer.
+
+---
+
+## 🎚️ GTPO Runtime Knobs
+
+Under `gtpo_runtime`, you can change module-level constants in `gtpo.gtpo_training` **at runtime**:
+
+- `ent_threshold` → `ENT_THRESHOLD`
+- `ent_scale` → `ENT_SCALE`
+- `w_raw` → `W_RAW`
+- `pad_id` → `PAD_ID` (⚠️ should typically match your tokenizer’s pad token id)
+- `eps` → `EPS`
+
+You can also pass **`torch_compile_options`** that your GTPO internals (e.g., `selective_log_softmax`) will pick up:
+
+```yaml
+gtpo_runtime:
+  torch_compile_options:
+    epilogue_fusion: true
+    "triton.cudagraphs": false
+    "trace.enabled": false
+```
+
+> If a key exists in the target module, the script casts the value to the current type when possible and prints what it set (e.g., `[GTPO] Set ENT_THRESHOLD = 0.7`).
+
+---
+
+## 🧪 More Example Commands
+
+### 1) Full default from YAML
+```bash
+python train_model.py config.yaml
+```
+
+### 2) Change GPU and run name
+```bash
+python train_model.py config.yaml \
+  --cuda 0 \
+  --run-name "GTPO_Llama8B_GPU0"
+```
+
+### 3) Swap base model to Qwen
+```bash
+python train_model.py config.yaml \
+  --model-name "Qwen/Qwen2.5-3B-Instruct" \
+  --dataset-name gsm8k \
+  --run-name "GTPO_Qwen3B_GSM8K"
+```
+
+### 4) GSM8K with subset override
+```bash
+python train_model.py config.yaml \
+  --dataset-name gsm8k \
+  --dataset-subset main \
+  --dataset-split train \
+  --run-name "GTPO_Llama8B_GSM8K_main"
+```
+
+### 5) MATH with a small subset for quick debugging
+```bash
+python train_model.py config.yaml \
+  --dataset-name hendrycks_math \
+  --dataset-subset prealgebra \
+  --run-name "GTPO_Llama8B_MATH_prealgebra_debug"
+```
+
+### 6) Keep YAML but experiment with different CUDA device
+```bash
+python train_model.py config.yaml --cuda 5
+```
+
+### 7) Combine multiple overrides
+```bash
+python train_model.py config.yaml \
+  --model-name "meta-llama/meta-Llama-3.1-8B-Instruct" \
+  --dataset-name gsm8k \
+  --dataset-split train \
+  --cuda 3 \
+  --run-name "GTPO_LLAMA8B_GSM8K_cuda3"
 ```
 
 ---
+
+## 🗂️ Outputs & Logging
+
+- Checkpoints (LoRA adapters) are saved to `output_dir` built from:
+  - `run_name`, `adam_*`, `weight_decay`, `num_generations`, `gradient_accumulation_steps`, `warmup_ratio`, `max_seq_length`, `learning_rate`, and `beta`.
+- With `report_to: ["wandb"]`, training logs are reported to Weights & Biases (ensure your environment is logged in to `wandb`).
+- `save_steps` controls how frequently the model is saved during training.
+
+---
+
+## 🧠 Reproducibility
+
+- Set `model.random_seed` (and optionally your CUDA deterministic flags) to stabilize runs.
+- Tokenization-based filtering depends on `training.max_prompt_length` and the **tokenizer**—changing models may change how many examples survive the filter.
+
+
+
+## ✅ TL;DR
+
+- Put your recipe in `config.yaml`.
+- Run `python train_model.py config.yaml`.
+- Add CLI flags (`--model-name`, `--dataset-name`, `--dataset-subset`, `--cuda`, `--run-name`) to iterate faster.
+- LoRA adapters are saved under a descriptive `output_dir`.
+
+Happy training! 🧪🚀
+
 
 ## 📖 Citation
 
@@ -133,5 +411,5 @@ For questions or collaborations, please contact:
 * Giulio Rossolini – [giulio.rossolini@santannapisa.it](mailto:giulio.rossolini@santannapisa.it)
 * Andrea Saracino – [andrea.saracino@santannapisa.it](mailto:andrea.saracino@santannapisa.it)
 
-```
+
 

@@ -282,8 +282,8 @@ class UnslothEfficientGTPO(torch.autograd.Function):
         lm_head: torch.Tensor,              # weight matrix (V,H)
         comp_ids: torch.Tensor,             # (B,G,L)
         comp_mask: torch.Tensor,            # (B,G,L)
-        advantages: torch.Tensor,           # (G,) oppure (B,G)
-        rewards: torch.Tensor,              # (G,) oppure (B,G)
+        advantages: torch.Tensor,           # (G,) 
+        rewards: torch.Tensor,              # (G,) 
         beta: float,
         scaler=None,
         n_chunks: int = 1,
