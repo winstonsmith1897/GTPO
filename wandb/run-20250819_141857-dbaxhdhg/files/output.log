@@ -1,0 +1,445 @@
+  0%|                                                                                                | 0/7473 [00:00<?, ?it/s]
++++++++++++++++++ STEP: 1 +++++++++++++++++
+ ============   COMP - 1 =============
+COMPLETION: <reasoning}
+Let's break down the time spent by James step-by-step to find out the total time he spent learning chess.
+
+1. **Time to learn the rules:** The problem states that it takes 2 hours to learn the rules of chess.
+
+2. **Time to get proficient to play in local tournaments:** It takes him 49 times the 2 hours to get proficient to start playing in local tournaments. So, we calculate:
+   \[
+   49 \times 2 = 98 \text{ hours}
+   \]
+
+3. **Combined time to get proficient to start mastering chess:** To find the combined time, we add the time to learn the rules and the time to get proficient:
+   \[
+   2 + 98 = 100 \text{ hours}
+   \]
+
+4. **Time to become a master:** It takes 100 times the combined time to become a master:
+   \[
+   100 \times 100 = 10000 \text{ hours}
+   \]
+
+5. **Total time spent:** To find the total time, we add all the components together:
+   \[
+   2 + 98 + 10000 = 10100 \text{ hours}
+   \]
+
+</reasoning>
+<answer>
+James spent a total of 10,100 hours learning to become a chess grandmaster.
+</answer>
+    - Format Reward : 1.5
+    - Correctness R : 0
+    - Total Reward  : 1.5
++++++++++++++++++ STEP: 1 +++++++++++++++++
+ ============   COMP - 2 =============
+COMPLETION: Let's break down the problem step by step:
+
+1. **Time to Learn the Rules:**
+   James spends 2 hours learning the rules.
+   - Let the total time to learn the rules be \( T_{rules} = 2 \) hours.
+
+2. **Time to Gains Proficiency to Start Playing Locally:**
+   It takes him 49 times as long to gain proficiency as it does to learn the rules.
+   - \( T_{proficiency} = 49 \times T_{rules} = 49 \times 2 = 98 \) hours.
+
+3. **Combined Time to Get Proficient:**
+   The combined time to learn the rules and gain proficiency is:
+   - \( T_{combined} = T_{rules} + T_{proficiency} = 2 + 98 = 100 \) hours.
+
+4. **Time to Become Master:**
+   It takes him 100 times the combined time to become a master.
+   - \( T_{master} = 100 \times T_{combined} = 100 \times 100 = 10000 \) hours.
+
+5. **Total Time Spent:**
+   The total time spent by James is the sum of all the times in the above steps.
+   - Total time \( T_{total} = T_{rules} + T_{proficiency} + T_{master} = 2 + 98 + 10000 = 10100 \) hours.
+
+Now, I will present the final result.
+<answer>10100</answer>
+    - Format Reward : 1.0
+    - Correctness R : 0
+    - Total Reward  : 1.0
++++++++++++++++++ STEP: 1 +++++++++++++++++
+ ============   COMP - 3 =============
+COMPLETION: <reasoning}
+To find the total time James spent on learning and becoming a chess grandmaster, we'll break the problem into parts and solve step by step:
+1. First, determine the time it took him to learn the rules.
+   - Given: It takes 2 hours to learn the rules.
+
+2. Then, to find the time it took to become proficient.
+   - Given: It takes 49 times the time to learn the rules to become proficient.
+   - Time to become proficient = 2 hours * 49 = 98 hours.
+
+3. Next, determine the combined total time before devoting his life to chess.
+   - Combined time = Time to learn rules + Time to become proficient
+   - Combined time = 2 hours + 98 hours = 100 hours.
+
+4. Finally, calculate the time it took to become a master.
+   - Given: This takes 100 times the combined time.
+   - Time to become a master = 100 hours * 100 = 10,000 hours.
+
+5. Add the time it took to become a master to the combined time to get proficient.
+   - Total time spent = Combined time + Time to become a master
+   - Total time spent = 100 hours + 10,000 hours = 10,100 hours.
+</reasoning>
+<answer>
+James spent a total of 10,100 hours on learning and becoming a chess grandmaster.
+</answer>
+    - Format Reward : 1.5
+    - Correctness R : 0
+    - Total Reward  : 1.5
++++++++++++++++++ STEP: 1 +++++++++++++++++
+ ============   COMP - 4 =============
+COMPLETION: <reasoning}
+To find the total time James spent, let's break the problem into parts and calculate each step by step.
+
+1. **Time to learn the rules:**
+   - According to the problem, this takes 2 hours.
+
+2. **Time to achieve proficiency:**
+   - The problem states it takes him 49 times longer to get proficient than to learn the rules.
+   - Calculation: \(49 \times 2\) hours
+
+3. **Total time to get proficient:**
+   - Combined time for rules and proficiency:
+   - Total time for proficiency:
+   - This includes the time to learn the rules and the time to become proficient. Let's add:
+   - Total time: \(2 + (49 \times 2)\) hours
+
+4. **Time to become a master:**
+   - The time to become a master is 100 times the combined time to get proficient.
+   - Combined time to get proficient:  (from step 3)
+   - Time to become a master:
+   - Calculating: \(100 \times \text{Total time to get proficient}\)
+
+5. **Total time spent (including being a master):**
+   - Total time spent: (time to learn rules + time to get proficient + time to become a master)
+
+Let's do the arithmetic.
+
+Step 2:
+\[ 49 \times 2 = 98 \text{ hours} \]
+
+Step 3:
+\[ 2 + 98 = 100 \text{ hours} \]
+
+Step 4:
+\[ 100 \times 100 = 10000 \text{ hours} \]
+
+Step 5:
+\[ 100 + 98 + 10000 = 10198 \text{ hours} \]
+
+</reasoning>
+<answer>
+The total time James spent is 10198 hours.
+</answer>
+    - Format Reward : 1.5
+    - Correctness R : 0
+    - Total Reward  : 1.5
++++++++++++++++++ STEP: 1 +++++++++++++++++
+ ============   COMP - 5 =============
+COMPLETION: <reasoning}
+Let's break down the problem step by step.
+
+1. **Time to learn the rules**:
+   It takes James 2 hours to learn the basic rules of chess.
+
+2. **Time to get proficiency**:
+   It takes him 49 times the time to learn the rules to achieve proficiency.
+
+   Therefore, time to get proficiency = 49 × 2 = 98 hours.
+
+3. **Combined time to get from proficient to a master**:
+   The combined time to get from proficiency to becoming a master is given by:
+
+   It takes 100 times the combined time to get proficient (before the dedication period) to reach the master level.
+
+   The combined time is the sum of the time spent learning the rules and the time spent getting proficient.
+
+   Combined time = time to learn rules + time to get proficient
+                = 2 hours + 98 hours
+                = 100 hours
+
+   Time to become a master = 100 × 100
+                           = 10000 hours.
+
+4. **Total time spent**:
+   Total time = Time to learn the rules + Time to get proficient + Time to become a master.
+              = 2 + 98 + 10000
+              = 10100 hours.
+
+</reasoning>
+<answer>
+James spent a total of 10,100 hours.
+</answer>
+    - Format Reward : 1.5
+    - Correctness R : 0
+    - Total Reward  : 1.5
++++++++++++++++++ STEP: 1 +++++++++++++++++
+ ============   COMP - 6 =============
+COMPLETION: <reasoning}
+First, let's break down the information given:
+- It takes 2 hours to learn the rules of chess.
+- It then takes him 49 times the time to learn the rules to achieve proficiency to start playing in local tournaments.
+- After becoming proficient, he spends 100 times the combined time of learning the rules and reaching proficiency to become a master.
+
+To find the total time spent, we need to calculate the time taken for each step and sum them up:
+- Time for rules: 2 hours.
+- Time for proficiency: 49 * 2 hours.
+- Time to become a master: 100 * (time for rules + time for proficiency).
+
+Now, we can calculate the time for each step:
+- Time for proficiency: 49 * 2 = 98 hours.
+- Combined time for rules and proficiency: 2 + 98 = 100 hours.
+- Time to become a master: 100 * 100 = 10000 hours.
+
+Finally, sum up all the times to find the total time spent:
+- Total time = 2 hours (rules) + 98 hours (proficiency) + 10000 hours (master).
+
+Therefore, we have:
+<answer>
+2 + 98 + 10000 = 10100 hours.
+</answer>
+    - Format Reward : 1.0
+    - Correctness R : 0
+    - Total Reward  : 1.0
++++++++++++++++++ STEP: 1 +++++++++++++++++
+ ============   COMP - 7 =============
+COMPLETION: <reasoning}
+To find the total time James spent, we need to calculate the time he spent on each phase and then add them up.
+
+1. Time to learn the rules: 2 hours.
+2. Time to get proficient: 49 times the time it took to learn the rules, which is \( 49 \times 2 \) hours.
+3. Time to become a master: 100 times the combined time to get proficient and spend the rest of his life on chess. The combined time here would be the time to get proficient.
+
+Let's denote the time to learn the rules as \( T_1 \), the time to get proficient as \( T_2 \), and the time to become a master as \( T_3 \).
+
+- \( T_1 = 2 \) hours
+- \( T_2 = 49 \times 2 = 98 \) hours
+- \( T_3 = 100 \times (T_1 + T_2) = 100 \times (2 + 98) = 100 \times 100 = 10000 \) hours
+
+Now, sum up the times for each phase:
+- Time spent learning the rules: \( T_1 = 2 \) hours
+- Time spent becoming proficient: \( T_2 = 98 \) hours
+- Time spent becoming a master: \( T_3 = 10000 \) hours
+
+Adding these together gives the total time spent:
+\[ \text{Total Time} = T_1 + T_2 + T_3 = 2 + 98 + 10000 = 10100 \text{ hours} \]
+
+</reasoning>
+<answer>
+10100 hours
+</answer>
+    - Format Reward : 1.5
+    - Correctness R : 0
+    - Total Reward  : 1.5
++++++++++++++++++ STEP: 1 +++++++++++++++++
+ ============   COMP - 8 =============
+COMPLETION: <reasoning}
+First, we need to calculate the time James spent learning the rules of chess, which is given as 2 hours.
+
+To determine the time to get a level of proficiency (to play in local tournaments), he needs 49 times the time it took to learn the rules.
+So the time required to reach this level is
+\[ 49 \times 2 \text{ hours} = 98 \text{ hours} \]
+
+Next, to find the total time to become a master, we are given that it takes 100 times the time combined to learn the rules and reach proficiency.
+The time combined to learn the rules (2 hours) and get proficient (98 hours) is
+\[ 2 + 98 = 100 \text{ hours} \]
+
+Therefore,
+\[ 100 \times 100 = 10000 \text{ hours} \]
+
+Finally, to find the total time spent, we add up all the time taken in each phase:
+\[
+2 \text{ (learning rules)} + 98 \text{ (proficiency)} + 10000 \text{ (master)} = 10100 \text{ hours}
+\]
+
+</reasoning>
+<answer>
+James spent a total of 10100 hours.
+</answer>
+    - Format Reward : 1.5
+    - Correctness R : 0
+    - Total Reward  : 1.5
+REWARDS: tensor([1.5000, 1.0000, 1.5000, 1.5000, 1.5000, 1.0000, 1.5000, 1.5000],
+       device='cuda:0')
+MEAN : tensor([1.3750, 1.3750, 1.3750, 1.3750, 1.3750, 1.3750, 1.3750, 1.3750],
+       device='cuda:0')
+ORIGINAL ADVANTAGES : tensor([ 0.1250, -0.3750,  0.1250,  0.1250,  0.1250, -0.3750,  0.1250,  0.1250],
+       device='cuda:0')
+COMPLETION MASK SUM : tensor([312, 347, 326, 416, 308, 296, 390, 289], device='cuda:0')
+=============== EFFICIENT (CONFLICT INSIDE) ===============
+ENTROPIES : tensor([[0.3542, 0.2975, 0.3703, 0.5169, 0.4620, 0.4428, 0.3047, 0.4513]],
+       device='cuda:0')
+POS FLAGS : tensor([ True, False,  True,  True,  True, False,  True,  True],
+       device='cuda:0')
+NEG FLAGS : tensor([False,  True, False, False, False,  True, False, False],
+       device='cuda:0')
+
+[DEBUG] G = 8 L = 416
+[DEBUG] active_flags  : [True, True, True, True, True, True, True, True]
+[DEBUG] active_idx    : [0, 1, 2, 3, 4, 5, 6, 7]
+[DEBUG] pos_use       : [True, False, True, True, True, False, True, True]
+[DEBUG] neg_use       : [False, True, False, False, False, True, False, False]
+[DEBUG] conflict_raw (forward) shape: torch.Size([8, 416])
+[DEBUG] conflict_raw_rev shape: torch.Size([8, 416])
+
+[DEBUG] completion original index 0 (subset row 0)
+FWD : ████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒········································································································
+BWD : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█████········································································································
+FIN : ████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█████········································································································
+
+[DEBUG] completion original index 1 (subset row 1)
+FWD : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒·····································································
+BWD : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒·········································································
+FIN : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒·········································································
+
+[DEBUG] completion original index 2 (subset row 2)
+FWD : ████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒··························································································
+BWD : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█████··························································································
+FIN : ████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█████··························································································
+
+[DEBUG] completion original index 3 (subset row 3)
+FWD : ████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+BWD : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██████
+FIN : ████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██████
+
+[DEBUG] completion original index 4 (subset row 4)
+FWD : ████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒············································································································
+BWD : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█████████············································································································
+FIN : ████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█████████············································································································
+
+[DEBUG] completion original index 5 (subset row 5)
+FWD : ······▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒························································································································
+BWD : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒····································································································································
+FIN : ······▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒····································································································································
+
+[DEBUG] completion original index 6 (subset row 6)
+FWD : ████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒··························
+BWD : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒████··························
+FIN : ████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒████··························
+
+[DEBUG] completion original index 7 (subset row 7)
+FWD : ██████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒·······························································································································
+BWD : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒████████████·······························································································································
+FIN : ██████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒████████████·······························································································································
+Batch 0 – completions con conflitto attivo: [0, 1, 2, 3, 4, 5, 6, 7]
+   completion 0: adv=+  n_conflict=5
+   completion 1: adv=-  n_conflict=4
+   completion 2: adv=+  n_conflict=5
+   completion 3: adv=+  n_conflict=6
+   completion 4: adv=+  n_conflict=9
+   completion 5: adv=-  n_conflict=12
+   completion 6: adv=+  n_conflict=4
+   completion 7: adv=+  n_conflict=12
+[b=0] completion 0: grad_norm = 0.000370
+[b=0] completion 1: grad_norm = 0.001877
+[b=0] completion 2: grad_norm = 0.000334
+[b=0] completion 3: grad_norm = 0.000244
+[b=0] completion 4: grad_norm = 0.000203
+[b=0] completion 5: grad_norm = 0.000786
+[b=0] completion 6: grad_norm = 0.000391
+[b=0] completion 7: grad_norm = 0.000171
+{'loss': 0.0435, 'grad_norm': 0.19335180521011353, 'learning_rate': 2.6315789473684208e-08, 'rewards/final_reward': 1.375, 'reward': 1.375, 'completion_length': 2684.0, 'kl': 0.0, 'epoch': 0.0}
+  File "/ssd1/marco.simoni/VULNERABILITY/GTPO/train_model.py", line 506, in <module>
+    main()
+  File "/ssd1/marco.simoni/VULNERABILITY/GTPO/train_model.py", line 502, in main
+    train(cfg)
+  File "/ssd1/marco.simoni/VULNERABILITY/GTPO/train_model.py", line 384, in train
+    trainer.train()
+  File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/transformers/trainer.py", line 2241, in train
+    return inner_training_loop(
+  File "<string>", line 306, in _fast_inner_training_loop
+  File "<string>", line 25, in _unsloth_training_step
+  File "/ssd1/marco.simoni/VULNERABILITY/GTPO/gtpo/gtpo_training.py", line 1227, in _prepare_inputs
+    outputs = self.llm.generate(all_prompts_text, sampling_params=self.sampling_params, use_tqdm=False, lora_request = self.model.load_lora('grpo_trainer_lora_model', load_tensors = True))
+  File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/utils.py", line 1057, in inner
+    return fn(*args, **kwargs)
+  File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/entrypoints/llm.py", line 469, in generate
+    outputs = self._run_engine(use_tqdm=use_tqdm)
+  File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/entrypoints/llm.py", line 1397, in _run_engine
+    step_outputs = self.llm_engine.step()
+  File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/engine/llm_engine.py", line 1391, in step
+    outputs = self.model_executor.execute_model(
+  File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/executor/executor_base.py", line 139, in execute_model
+    output = self.collective_rpc("execute_model",
+  File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/executor/uniproc_executor.py", line 56, in collective_rpc
+    answer = run_method(self.driver_worker, method, args, kwargs)
+  File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/utils.py", line 2196, in run_method
+    return func(*args, **kwargs)
+  File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/worker/worker_base.py", line 420, in execute_model
+    output = self.model_runner.execute_model(
+  File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/worker/model_runner.py", line 1782, in execute_model
+    output: SamplerOutput = self.model.sample(
+  File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/model_executor/models/qwen2.py", line 505, in sample
+    next_tokens = self.sampler(logits, sampling_metadata)
+  File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/model_executor/layers/sampler.py", line 287, in forward
+    maybe_deferred_sample_results, maybe_sampled_tokens_tensor = _sample(
+  File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/model_executor/layers/sampler.py", line 775, in _sample
+    return _sample_with_torch(
+  File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/model_executor/layers/sampler.py", line 744, in _sample_with_torch
+    return get_pythonized_sample_results(
+  File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/model_executor/layers/sampler.py", line 616, in get_pythonized_sample_results
+    sample_results = _random_sample(seq_groups,
+  File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/model_executor/layers/sampler.py", line 485, in _random_sample
+    random_samples = random_samples.cpu()
+KeyboardInterrupt
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/ssd1/marco.simoni/VULNERABILITY/GTPO/train_model.py", line 506, in <module>
+[rank0]:     main()
+[rank0]:   File "/ssd1/marco.simoni/VULNERABILITY/GTPO/train_model.py", line 502, in main
+[rank0]:     train(cfg)
+[rank0]:   File "/ssd1/marco.simoni/VULNERABILITY/GTPO/train_model.py", line 384, in train
+[rank0]:     trainer.train()
+[rank0]:   File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/transformers/trainer.py", line 2241, in train
+[rank0]:     return inner_training_loop(
+[rank0]:   File "<string>", line 306, in _fast_inner_training_loop
+[rank0]:   File "<string>", line 25, in _unsloth_training_step
+[rank0]:   File "/ssd1/marco.simoni/VULNERABILITY/GTPO/gtpo/gtpo_training.py", line 1227, in _prepare_inputs
+[rank0]:     outputs = self.llm.generate(all_prompts_text, sampling_params=self.sampling_params, use_tqdm=False, lora_request = self.model.load_lora('grpo_trainer_lora_model', load_tensors = True))
+[rank0]:   File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/utils.py", line 1057, in inner
+[rank0]:     return fn(*args, **kwargs)
+[rank0]:   File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/entrypoints/llm.py", line 469, in generate
+[rank0]:     outputs = self._run_engine(use_tqdm=use_tqdm)
+[rank0]:   File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/entrypoints/llm.py", line 1397, in _run_engine
+[rank0]:     step_outputs = self.llm_engine.step()
+[rank0]:   File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/engine/llm_engine.py", line 1391, in step
+[rank0]:     outputs = self.model_executor.execute_model(
+[rank0]:   File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/executor/executor_base.py", line 139, in execute_model
+[rank0]:     output = self.collective_rpc("execute_model",
+[rank0]:   File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/executor/uniproc_executor.py", line 56, in collective_rpc
+[rank0]:     answer = run_method(self.driver_worker, method, args, kwargs)
+[rank0]:   File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/utils.py", line 2196, in run_method
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/worker/worker_base.py", line 420, in execute_model
+[rank0]:     output = self.model_runner.execute_model(
+[rank0]:   File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/worker/model_runner.py", line 1782, in execute_model
+[rank0]:     output: SamplerOutput = self.model.sample(
+[rank0]:   File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/model_executor/models/qwen2.py", line 505, in sample
+[rank0]:     next_tokens = self.sampler(logits, sampling_metadata)
+[rank0]:   File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/model_executor/layers/sampler.py", line 287, in forward
+[rank0]:     maybe_deferred_sample_results, maybe_sampled_tokens_tensor = _sample(
+[rank0]:   File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/model_executor/layers/sampler.py", line 775, in _sample
+[rank0]:     return _sample_with_torch(
+[rank0]:   File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/model_executor/layers/sampler.py", line 744, in _sample_with_torch
+[rank0]:     return get_pythonized_sample_results(
+[rank0]:   File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/model_executor/layers/sampler.py", line 616, in get_pythonized_sample_results
+[rank0]:     sample_results = _random_sample(seq_groups,
+[rank0]:   File "/ssd1/marco.simoni/VULNERABILITY/grpo_env/lib/python3.10/site-packages/vllm/model_executor/layers/sampler.py", line 485, in _random_sample
+[rank0]:     random_samples = random_samples.cpu()
+[rank0]: KeyboardInterrupt

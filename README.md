@@ -49,7 +49,7 @@ GTPO introduces **conflict-aware gradient corrections** and **entropy-based regu
 Clone the repository:
 
 ```bash
-git clone https://github.com/<your-org-or-username>/GTPO.git
+git clone https://github.com/winstonsmith1897/GTPO.git
 cd GTPO
 ````
 

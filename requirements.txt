@@ -180,7 +180,7 @@ orjson==3.10.15
 outlines==0.1.11
 outlines_core==0.1.26
 packaging==24.2
-paddle2onnx==2.0.0
+paddle2onnx
 paddlefsl==1.1.0
 paddlenlp==2.3.1
 pandas==2.2.3
