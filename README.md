@@ -8,6 +8,7 @@
 [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/winstonsmith1897/GTPO/blob/main/colab/GTPO_training_example.ipynb)
 [<img src="images/unsloth_sticker.png" alt="Made with Unsloth" height="30">](https://unsloth.ai)
 
+![Logo](images/final_gtpo.png)
 
 
 This repository contains the official implementation of **GTPO (Group-relative Trajectory-based Policy Optimization)**, a novel method for stable and effective policy optimization in Large Language Models (LLMs).  
