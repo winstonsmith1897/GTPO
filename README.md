@@ -6,7 +6,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/winstonsmith1897/GTPO/blob/main/colab/GTPO_training_example.ipynb)
-[![Made with Unsloth](images/unsloth_sticker.png)](https://unsloth.ai)
+[<img src="images/unsloth_sticker.png" alt="Made with Unsloth" height="30">](https://unsloth.ai)
+
 
 
 This repository contains the official implementation of **GTPO (Group-relative Trajectory-based Policy Optimization)**, a novel method for stable and effective policy optimization in Large Language Models (LLMs).  
