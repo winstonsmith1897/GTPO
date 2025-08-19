@@ -19,7 +19,10 @@ GTPO addresses key limitations of Group-relative Policy Optimization (GRPO), nam
 GTPO introduces **conflict-aware gradient corrections** and **entropy-based regularization** to mitigate these issues, ensuring more stable training without the need for KL-divergence regularization or a reference model.
 
 📄 Paper: [GTPO: Trajectory-Based Policy Optimization in Large Language Models](https://arxiv.org/abs/2508.03772)  
-*(Marco Simoni, Aleksandar Fontana, Giulio Rossolini, Andrea Saracino)*
+*(Marco Simoni\*, Aleksandar Fontana\*, Giulio Rossolini, Andrea Saracino)*  
+
+\* Equal contribution
+
 
 ---
 
@@ -400,9 +403,9 @@ Happy training! 🧪🚀
 If you use this code, please cite our paper:
 
 ```bibtex
-@article{simoni2025gtpo,
+@article{gtpo,
   title={GTPO: Trajectory-Based Policy Optimization in Large Language Models},
-  author={Simoni, Marco and Fontana, Aleksandar and Rossolini, Giulio and Saracino, Andrea},
+  author={Simoni*, Marco and Fontana*, Aleksandar and Rossolini, Giulio and Saracino, Andrea},
   journal={arXiv preprint arXiv:2508.03772},
   year={2025}
 }
