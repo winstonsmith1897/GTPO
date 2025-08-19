@@ -430,12 +430,6 @@ def GTPO_accumulated_loss(
     n_chunks: int = -1,
 ):
 
-    """
-    Wrapper lato-trainer: calcola loss, lunghezza completion e mean-KL.
-
-    Tutta la logica di conflitti/delta è all’interno di
-    `UnslothEfficientGTPO`. Da qui passiamo solo placeholder.
-    """
     device = input_ids.device
     bsz, _ = input_ids.shape
 
