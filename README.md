@@ -313,10 +313,7 @@ gtpo_runtime:
 > If a key exists in the target module, the script casts the value to the current type when possible and prints what it set (e.g., `[GTPO] Set ENT_THRESHOLD = 0.7`).
 
 ---
-Capito ✅
-Ecco la sezione **già pronta in Markdown**, così la puoi copiare **pari pari** nel tuo README senza toccare nulla.
 
----
 
 ````markdown
 ## 🧪 More Example Commands
