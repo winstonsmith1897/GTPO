@@ -1,6 +1,4 @@
-Here’s a `README.md` draft for your GitHub repository, written directly in Markdown format and based on the content of your paper:
 
-````markdown
 # GTPO: Trajectory-Based Policy Optimization in Large Language Models
 
 This repository contains the official implementation of **GTPO (Group-relative Trajectory-based Policy Optimization)**, a novel method for stable and effective policy optimization in Large Language Models (LLMs).  
