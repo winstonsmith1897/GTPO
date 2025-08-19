@@ -19,7 +19,7 @@ import torch
 import torch.nn as nn
 from packaging.version import Version
 from torch import Tensor
-from torch._dynamo import graph_break  # per il debug facoltativo
+from torch._dynamo import graph_break  
 from torch._dynamo import disable
 from torch.nn import functional as F
 from transformers import (DataCollatorForLanguageModeling,
