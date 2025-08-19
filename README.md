@@ -79,7 +79,7 @@ You can run our demo notebook directly in Google Colab:
 
 # GTPO Training Guide
 
-This guide explains how to train with **`train_model.py`** using a YAML configuration file and **command-line overrides** for quick experimentation. All comments and messages are in English.
+This guide explains how to train with **`train_model.py`** using a YAML configuration file and **command-line overrides** for quick experimentation. 
 
 ---
 
@@ -131,7 +131,7 @@ python train_model.py config.yaml \
 run_name: "GTPO_LLAMA8B_MATH"
 
 env:
-  CUDA_VISIBLE_DEVICES: "5"
+  CUDA_VISIBLE_DEVICES: "0"
 
 model:
   model_name: "meta-llama/meta-Llama-3.1-8B-Instruct"
