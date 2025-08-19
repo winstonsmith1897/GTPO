@@ -1316,10 +1316,6 @@ class _UnslothGTPOTrainer(Trainer):
         #rewards = (rewards_per_func * self.reward_weights.to(device).unsqueeze(0)).sum(dim=1)
         
         rewards = (rewards_per_func * self.reward_weights.to(device).unsqueeze(0)).sum(dim=1)
-        # # --------------------------------------------------------------
-        # # normalizza rewards in [0, 1]
-        # # --------------------------------------------------------------
-
 
         # Compute grouped-wise rewards
         mean_grouped_rewards = rewards.view(-1, self.num_generations).mean(dim=1)
