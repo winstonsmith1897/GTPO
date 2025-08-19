@@ -315,7 +315,6 @@ gtpo_runtime:
 ---
 
 
-````markdown
 ## 🧪 More Example Commands
 
 ### 1) Full default from YAML
