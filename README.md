@@ -237,9 +237,9 @@ Options (CLI overrides supported by `train_model.py`):
 
 ```bash
 python train_model.py config.yaml \
-  --dataset-name gsm8k \
-  --dataset-split train \
-  --run-name "GTPO_Llama8B_GSM8K"
+  --dataset.name gsm8k \
+  --dataset.split train \
+  --run_name GTPO_Llama8B_GSM8K
 ```
 
 GSM8K answer extraction prefers the final line after `####`; otherwise tries `###` or the last token as a fallback.
@@ -248,19 +248,17 @@ GSM8K answer extraction prefers the final line after `####`; otherwise tries `##
 
 ```bash
 python train_model.py config.yaml \
-  --dataset-name hendrycks_math \
-  --run-name "GTPO_Llama8B_MATH_ALL"
+  --dataset.name hendrycks_math \
+  --run_name GTPO_Llama8B_MATH_ALL
 ```
 
 ### Hendrycks MATH (specific subsets only)
 
 ```bash
 python train_model.py config.yaml \
-  --dataset-name hendrycks_math \
-  --dataset-subset algebra \
-  --dataset-subset geometry \
-  --dataset-subset number_theory \
-  --run-name "GTPO_Llama8B_MATH_AGN"
+  --dataset.name hendrycks_math \
+  --dataset.subsets algebra geometry number_theory \
+  --run_name GTPO_Llama8B_MATH_AGN
 ```
 
 > Internally, the script concatenates the selected subsets and then filters examples whose prompt tokenization would exceed `training.max_prompt_length`.
@@ -315,60 +313,137 @@ gtpo_runtime:
 > If a key exists in the target module, the script casts the value to the current type when possible and prints what it set (e.g., `[GTPO] Set ENT_THRESHOLD = 0.7`).
 
 ---
+Capito ✅
+Ecco la sezione **già pronta in Markdown**, così la puoi copiare **pari pari** nel tuo README senza toccare nulla.
 
+---
+
+````markdown
 ## 🧪 More Example Commands
 
 ### 1) Full default from YAML
 ```bash
 python train_model.py config.yaml
-```
+````
 
 ### 2) Change GPU and run name
+
 ```bash
 python train_model.py config.yaml \
-  --cuda 0 \
-  --run-name "GTPO_Llama8B_GPU0"
+  --env.CUDA_VISIBLE_DEVICES 0 \
+  --run_name GTPO_Llama8B_GPU0
 ```
 
 ### 3) Swap base model to Qwen
+
 ```bash
 python train_model.py config.yaml \
-  --model-name "Qwen/Qwen2.5-3B-Instruct" \
-  --dataset-name gsm8k \
-  --run-name "GTPO_Qwen3B_GSM8K"
+  --model.model_name Qwen/Qwen2.5-3B-Instruct \
+  --dataset.name gsm8k \
+  --run_name GTPO_Qwen3B_GSM8K
 ```
 
 ### 4) GSM8K with subset override
+
 ```bash
 python train_model.py config.yaml \
-  --dataset-name gsm8k \
-  --dataset-subset main \
-  --dataset-split train \
-  --run-name "GTPO_Llama8B_GSM8K_main"
+  --dataset.name gsm8k \
+  --dataset.subset main \
+  --dataset.split train \
+  --run_name GTPO_Llama8B_GSM8K_main
 ```
 
 ### 5) MATH with a small subset for quick debugging
+
 ```bash
 python train_model.py config.yaml \
-  --dataset-name hendrycks_math \
-  --dataset-subset prealgebra \
-  --run-name "GTPO_Llama8B_MATH_prealgebra_debug"
+  --dataset.name hendrycks_math \
+  --dataset.subsets prealgebra \
+  --run_name GTPO_Llama8B_MATH_prealgebra_debug
 ```
 
 ### 6) Keep YAML but experiment with different CUDA device
+
 ```bash
-python train_model.py config.yaml --cuda 5
+python train_model.py config.yaml --env.CUDA_VISIBLE_DEVICES 5
 ```
 
 ### 7) Combine multiple overrides
+
 ```bash
 python train_model.py config.yaml \
-  --model-name "meta-llama/meta-Llama-3.1-8B-Instruct" \
-  --dataset-name gsm8k \
-  --dataset-split train \
-  --cuda 3 \
-  --run-name "GTPO_LLAMA8B_GSM8K_cuda3"
+  --model.model_name meta-llama/meta-Llama-3.1-8B-Instruct \
+  --dataset.name gsm8k \
+  --dataset.split train \
+  --env.CUDA_VISIBLE_DEVICES 3 \
+  --run_name GTPO_LLAMA8B_GSM8K_cuda3
 ```
+
+### 8) Faster warmup & different optimizer
+
+```bash
+python train_model.py config.yaml \
+  --training.warmup_ratio 0.01 \
+  --training.optimizer adamw_torch \
+  --run_name GTPO_Llama8B_fastwarmup
+```
+
+### 9) Increase generations and sequence length
+
+```bash
+python train_model.py config.yaml \
+  --training.num_generations 16 \
+  --model.max_seq_length 8192 \
+  --run_name GTPO_Llama8B_longseq
+```
+
+### 🔟 Override GTPO runtime knobs
+
+```bash
+python train_model.py config.yaml \
+  --gtpo_runtime.ent_threshold 0.8 \
+  --gtpo_runtime.ent_scale 0.2 \
+  --gtpo_runtime.pad_id 0 \
+  --run_name GTPO_Llama8B_runtimeTweaks
+```
+
+---
+
+## 🎛 Cheat Sheet of Common Overrides
+
+| Section          | Example Flag                                                 | Description                                  |
+| ---------------- | ------------------------------------------------------------ | -------------------------------------------- |
+| **General**      | `--run_name EXPERIMENT_X`                                    | Set run/experiment name                      |
+| **Environment**  | `--env.CUDA_VISIBLE_DEVICES 1`                               | Choose which GPU to use                      |
+| **Model**        | `--model.model_name Qwen/Qwen2.5-3B-Instruct`                | Change base model                            |
+|                  | `--model.max_seq_length 8192`                                | Max sequence length                          |
+|                  | `--model.max_prompt_length 4000`                             | Max prompt length                            |
+|                  | `--model.load_in_4bit false`                                 | Enable/disable 4-bit quantization            |
+|                  | `--model.lora_rank 128`                                      | LoRA rank                                    |
+|                  | `--model.target_modules q_proj v_proj o_proj`                | LoRA target modules                          |
+| **Dataset**      | `--dataset.name gsm8k`                                       | Switch dataset (gsm8k / hendrycks\_math)     |
+|                  | `--dataset.subset main`                                      | Single subset (GSM8K)                        |
+|                  | `--dataset.subsets algebra geometry`                         | Multiple subsets (MATH)                      |
+|                  | `--dataset.split train`                                      | Choose dataset split                         |
+| **Training**     | `--training.learning_rate 2e-6`                              | Learning rate                                |
+|                  | `--training.warmup_ratio 0.01`                               | Warmup ratio                                 |
+|                  | `--training.optimizer adamw_torch`                           | Optimizer choice                             |
+|                  | `--training.num_generations 16`                              | Number of generations per sample             |
+|                  | `--training.num_train_epochs 3`                              | Number of epochs                             |
+|                  | `--training.per_device_train_batch_size 2`                   | Per-device batch size                        |
+|                  | `--training.gradient_accumulation_steps 4`                   | Gradient accumulation                        |
+|                  | `--training.save_steps 200`                                  | Save checkpoint frequency                    |
+|                  | `--training.report_to wandb`                                 | Reporting backend (e.g., wandb, tensorboard) |
+| **Trainer**      | `--trainer.class_path gtpo.gtpo_training.UnslothGTPOTrainer` | Trainer class                                |
+|                  | `--trainer.reward_funcs reward_math.final_reward`            | Reward functions                             |
+| **GTPO Runtime** | `--gtpo_runtime.ent_threshold 0.7`                           | Entropy threshold                            |
+|                  | `--gtpo_runtime.ent_scale 0.1`                               | Entropy scaling factor                       |
+|                  | `--gtpo_runtime.w_raw 2.0`                                   | Weight for raw reward                        |
+|                  | `--gtpo_runtime.pad_id 128004`                               | Padding token ID                             |
+|                  | `--gtpo_runtime.eps 1e-6`                                    | Small epsilon for numerical stability        |
+|                  | `--gtpo_runtime.torch_compile_options.epilogue_fusion true`  | Torch compile option                         |
+
+
 
 ---
 
