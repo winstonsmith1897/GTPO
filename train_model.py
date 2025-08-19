@@ -3,7 +3,7 @@
 
 import os
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 
 from unsloth import FastLanguageModel, PatchFastRL
 import argparse
@@ -12,7 +12,7 @@ import random
 import re
 import warnings
 from typing import Dict
-
+from copy import deepcopy
 import numpy as np
 import torch
 import yaml
@@ -388,23 +388,65 @@ def train(cfg: Dict):
 
 
 # =============== CLI ===============
+def set_by_path(dic, dotted, value):
+    """Set a value in a nested dict using a dotted path (e.g., 'a.b.c')."""
+    parts = dotted.split(".")
+    for p in parts[:-1]:
+        dic = dic.setdefault(p, {})
+    dic[parts[-1]] = value
+
+
+def add_yaml_args(parser, cfg, prefix=""):
+    """
+    Recursively add argparse flags for every YAML key.
+    Flags are named with dotted paths: --section.sub.key
+
+    Type inference:
+    - bool  -> custom str->bool converter
+    - int   -> int
+    - float -> float
+    - list  -> nargs='+', elements kept as strings (safe & predictable)
+    - str/other -> str
+    """
+    def str2bool(x: str) -> bool:
+        return str(x).strip().lower() in ("1", "true", "t", "yes", "y", "on")
+
+    for key, val in cfg.items():
+        arg_name = f"{prefix}{key}" if prefix == "" else f"{prefix}.{key}"
+        if isinstance(val, dict):
+            # Recurse into nested dicts
+            add_yaml_args(parser, val, arg_name)
+        else:
+            cli_flag = f"--{arg_name}"
+            if isinstance(val, bool):
+                parser.add_argument(cli_flag, type=str2bool, help=f"Override {arg_name} (bool, default={val})")
+            elif isinstance(val, int):
+                parser.add_argument(cli_flag, type=int, help=f"Override {arg_name} (int, default={val})")
+            elif isinstance(val, float):
+                parser.add_argument(cli_flag, type=float, help=f"Override {arg_name} (float, default={val})")
+            elif isinstance(val, list):
+                # Keep list items as strings; downstream code can cast if needed.
+                parser.add_argument(cli_flag, nargs="+", help=f"Override {arg_name} (list, default={val})")
+            else:
+                parser.add_argument(cli_flag, type=str, help=f"Override {arg_name} (str, default={val})")
 
 def parse_args():
-    """Parse CLI arguments for YAML path and lightweight overrides."""
-    p = argparse.ArgumentParser(description="GTPO training from YAML with CLI overrides.")
-    p.add_argument("config", nargs="?", default="config.yaml", help="Path to YAML file (default: config.yaml)")
+    """Build a dynamic CLI that exposes one flag per YAML entry (dotted path)."""
+    # First pass: only parse the config path so we can read the YAML
+    base = argparse.ArgumentParser(description="GTPO training from YAML with full CLI overrides.")
+    base.add_argument("config", nargs="?", default="config.yaml", help="Path to YAML file (default: config.yaml)")
+    tmp_args, _ = base.parse_known_args()
 
-    # Requested overrides
-    p.add_argument("--model-name", type=str, help="Override model name (e.g., Qwen/Qwen2.5-3B-Instruct)")
-    p.add_argument("--dataset-name", type=str, help="Override dataset (gsm8k | hendrycks_math | math)")
+    # Load the YAML to discover all keys and their types
+    with open(tmp_args.config, "r") as f:
+        cfg = yaml.safe_load(f)
 
-    # Useful optional overrides
-    p.add_argument("--dataset-subset", action="append",
-                   help="Dataset subset. Repeatable. (e.g., --dataset-subset algebra)")
-    p.add_argument("--dataset-split", type=str, help="Dataset split (e.g., train, validation, test)")
-    p.add_argument("--run-name", type=str, help="Run name for output_dir")
-    p.add_argument("--cuda", type=str, help="Value for CUDA_VISIBLE_DEVICES")
-    return p.parse_args()
+    # Second pass: add one CLI flag for each YAML entry
+    add_yaml_args(base, cfg)
+
+    # Parse final arguments with all dynamic flags available
+    return base.parse_args()
+
 
 
 def normalize_sections(cfg: Dict):
@@ -445,43 +487,15 @@ def normalize_sections(cfg: Dict):
             cfg.setdefault("env", {})["CUDA_VISIBLE_DEVICES"] = cfg.pop("CUDA_VISIBLE_DEVICES")
     return cfg
 
-
 def apply_cli_overrides(cfg: Dict, args):
-    """Apply model/dataset overrides from CLI on top of the YAML."""
-    # Model override
-    if args.model_name:
-        cfg.setdefault("model", {})["model_name"] = args.model_name
-
-    # Dataset overrides
-    if args.dataset_name:
-        name = args.dataset_name.strip().lower()
-        # Common aliases
-        if name in ("math", "hendrycks_math", "eleutherai/hendrycks_math"):
-            name = "hendrycks_math"
-        elif name in ("gsm8k",):
-            name = "gsm8k"
-        else:
-            raise ValueError(f"Unrecognized dataset: {args.dataset_name}")
-        cfg.setdefault("dataset", {})["name"] = name
-
-    if args.dataset_subset:
-        # For gsm8k: use the first subset as 'subset'
-        # For hendrycks_math: use the full list as 'subsets'
-        dsname = cfg.get("dataset", {}).get("name", "").lower()
-        if dsname == "gsm8k":
-            cfg["dataset"]["subset"] = args.dataset_subset[0]
-        else:
-            cfg["dataset"]["subsets"] = args.dataset_subset
-
-    if args.dataset_split:
-        cfg.setdefault("dataset", {})["split"] = args.dataset_split
-
-    if args.run_name:
-        cfg["run_name"] = args.run_name
-
-    if args.cuda:
-        cfg.setdefault("env", {})["CUDA_VISIBLE_DEVICES"] = args.cuda
-
+    """Apply CLI dotted-path overrides back into the loaded YAML config."""
+    cfg = deepcopy(cfg)
+    for k, v in vars(args).items():
+        # Skip the config file path; everything else maps 1:1 to dotted keys
+        if k == "config":
+            continue
+        if v is not None:
+            set_by_path(cfg, k, v)
     return cfg
 
 

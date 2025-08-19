@@ -1,7 +1,7 @@
 run_name: "GTPO_LLAMA8B_MATH"
 
 env:
-  CUDA_VISIBLE_DEVICES: "5"
+  CUDA_VISIBLE_DEVICES: "0"
 
 model:
   model_name: "meta-llama/meta-Llama-3.1-8B-Instruct"   # override with --model-name

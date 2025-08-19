@@ -1,0 +1,103 @@
+{
+  "os": "Linux-5.15.0-139-generic-x86_64-with-glibc2.35",
+  "python": "CPython 3.10.12",
+  "startedAt": "2025-08-19T15:13:01.599595Z",
+  "args": [
+    "config.yaml",
+    "--model.model_name",
+    "Qwen/Qwen2.5-3B-Instruct",
+    "--training.learning_rate",
+    "2e-6",
+    "--training.warmup_ratio",
+    "0.01",
+    "--training.num_generations",
+    "12",
+    "--model.gpu_memory_utilization",
+    "0.6",
+    "--gtpo_runtime.ent_threshold",
+    "1.02",
+    "--model.lora_rank",
+    "64",
+    "--dataset.name",
+    "gsm8k"
+  ],
+  "program": "/ssd1/marco.simoni/VULNERABILITY/GTPO/train_model.py",
+  "codePath": "train_model.py",
+  "git": {
+    "remote": "git@github.com:winstonsmith1897/GTPO.git",
+    "commit": "7765ed2120a81eecbbbfe3882cccfd94ba3277d2"
+  },
+  "email": "marco.simoni0711@gmail.com",
+  "root": "/ssd1/marco.simoni/VULNERABILITY/GTPO",
+  "host": "gpu1",
+  "executable": "/ssd1/marco.simoni/VULNERABILITY/grpo_env/bin/python",
+  "codePathLocal": "train_model.py",
+  "cpu_count": 32,
+  "cpu_count_logical": 64,
+  "gpu": "NVIDIA A100-PCIE-40GB",
+  "gpu_count": 8,
+  "disk": {
+    "/": {
+      "total": "942328844288",
+      "used": "464212307968"
+    }
+  },
+  "memory": {
+    "total": "1623216689152"
+  },
+  "cpu": {
+    "count": 32,
+    "countLogical": 64
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA A100-PCIE-40GB",
+      "memoryTotal": "42949672960",
+      "cudaCores": 6912,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA A100-PCIE-40GB",
+      "memoryTotal": "42949672960",
+      "cudaCores": 6912,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA A100-PCIE-40GB",
+      "memoryTotal": "42949672960",
+      "cudaCores": 6912,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA A100-PCIE-40GB",
+      "memoryTotal": "42949672960",
+      "cudaCores": 6912,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA A100-PCIE-40GB",
+      "memoryTotal": "42949672960",
+      "cudaCores": 6912,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA A100-PCIE-40GB",
+      "memoryTotal": "42949672960",
+      "cudaCores": 6912,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA A100-PCIE-40GB",
+      "memoryTotal": "42949672960",
+      "cudaCores": 6912,
+      "architecture": "Ampere"
+    },
+    {
+      "name": "NVIDIA A100-PCIE-40GB",
+      "memoryTotal": "42949672960",
+      "cudaCores": 6912,
+      "architecture": "Ampere"
+    }
+  ],
+  "cudaVersion": "12.4"
+}
