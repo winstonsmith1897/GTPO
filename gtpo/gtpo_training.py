@@ -303,7 +303,6 @@ class UnslothEfficientGTPO(torch.autograd.Function):
             assert rewards.shape == (B, G), f"rewards shape {tuple(rewards.shape)} != (B,{G})"
         rewards = rewards.to(device)
 
-        # ---- normalizza advantages a (B,G) ------------------------------
         if advantages.dim() == 1:
             assert advantages.shape[0] == G, f"advantages len {advantages.shape[0]} != G={G}"
             adv_BG = advantages.unsqueeze(0).expand(B, -1).to(device)  # (B,G)
@@ -453,7 +452,7 @@ def GTPO_accumulated_loss(
     os.environ["UNSLOTH_RETURN_HIDDEN_STATES"] = "1"
 
     completion_input_ids = input_ids[:, -logits_to_keep:]
-    if rewards.dim() == 1:                                      # caso B = 1
+    if rewards.dim() == 1:                                      # case B = 1
         rewards = rewards.unsqueeze(0)                          # (1,G)
         completion_mask = completion_mask.unsqueeze(0)
         completion_input_ids = completion_input_ids.unsqueeze(0)
