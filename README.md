@@ -63,7 +63,7 @@ pip install -r requirements.txt
 
 You can run our demo notebook directly in Google Colab:
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/winstonsmith1897/GTPO/blob/main/GTPO_training_example.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/winstonsmith1897/GTPO/blob/main/colab/GTPO_training_example.ipynb)
 
 # GTPO Training Guide
 
