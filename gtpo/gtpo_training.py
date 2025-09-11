@@ -102,7 +102,8 @@ def compute_completion_stats(
     probs = torch.softmax(new_logits, dim=-1)
     entropy = -(probs * torch.log(probs.clamp_min(EPS))).sum(-1)
     entropy_c = (entropy * mask_f).sum() / n_tok
-    wandb.log({"mean_entropy": entropy_c})
+    if wandb.run is not None and self.accelerator.is_main_process:
+      wandb.log({"mean_entropy": entropy_c})
 
     return entropy_c, (per_kl * mask_f).sum() / n_tok
 
