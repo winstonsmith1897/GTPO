@@ -13,38 +13,12 @@
   <img src="images/maze.gif" alt="Maze" width="47.5%">
 </p>
 
-<p align="center">
-
-$$
-\delta_i =
-\begin{cases}
-1, & \text{if } \langle H \rangle_{\text{ini}} \ge \ln 2,\\[6pt]
-0, & \text{if } \langle H \rangle_{\text{ini}} < \ln 2
-       \;\text{and}\;
-       \langle H \rangle_i > \ln 2,\\[6pt]
-1, & \text{if } \langle H \rangle_{\text{ini}} < \ln 2
-       \;\text{and}\;
-       \langle H \rangle_i \le \ln 2.
-\end{cases}
-$$
-
-</p>
 
 <p align="center">
 
 $$
-\mathcal{J}_{\mathrm{GTPO}}
-=
-\mathbb{E}_{q,\{o_i\}}
-\left[
-\frac{1}{G}
-\sum_{i=1}^{G}
-\frac{\delta_i \cdot \mathcal{A}_i}{|o_i|}
-\sum_{t = 1}^{|o_i|}
-r_{i,t}\,\lambda_{i,t}
-\;-\;
-\gamma \cdot \langle H \rangle_i
-\right]
+\mathcal{J}_{\text{GTPO}} = \mathbb{E}_{q,\{o_i\}} \left[\frac{1}{G} \sum_{i=1}^{G} \frac{\delta_i \cdot \mathcal{A}_i}{|o_i|}
+\sum_{t = 1}^{|o_i|} r_{i,t}\lambda_{i,t} - \gamma \cdot \langle H \rangle_i \right]
 $$
 
 </p>
