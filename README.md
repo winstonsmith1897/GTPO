@@ -14,11 +14,7 @@
 </p>
 
 
-|  |  |
-| --- | --- |
-| $$ \mathcal{J}_{\text{GTPO}} = \mathbb{E}_{q,\{o_i\}} \left[ \frac{1}{G} \sum_{i=1}^{G} \frac{\delta_i \cdot \mathcal{A}_i}{\lvert o_i \rvert} \sum_{t = 1}^{\lvert o_i \rvert} r_{i,t}\lambda_{i,t} - \gamma \cdot \langle H \rangle_i \right] $$ | $$ \delta_i = \begin{cases} 1, & \text{if } \langle H \rangle_{\text{ini}} > \ln 2, \\ 0, & \text{if } \langle H \rangle_{\text{ini}} < \ln 2 \text{ and } \langle H \rangle_i > \ln 2, \\ 1, & \text{if } \langle H \rangle_{\text{ini}} < \ln 2 \text{ and } \langle H \rangle_i \leq \ln 2. \end{cases} $$ |
-
-
+<p align="center"> $$ \mathcal{J}_{\text{GTPO}} = \mathbb{E}_{q,\{o_i\}} \left[\frac{1}{G} \sum_{i=1}^{G} \frac{\delta_i \cdot \mathcal{A}_i}{|o_i|} \sum_{t = 1}^{|o_i|} r_{i,t}\lambda_{i,t} - \gamma \cdot \langle H \rangle_i \right] $$ </p> <p align="center"> $$ \delta_i = \begin{cases} 1, & \text{if } \langle H \rangle_{ini} > \ln 2, \\ 0, & \text{if } \langle H \rangle_{ini} < \ln 2 \text{ and } \langle H \rangle_i > \ln 2, \\ 1, & \text{if } \langle H \rangle_{ini} < \ln 2 \text{ and } \langle H \rangle_i \leq \ln 2. \end{cases} $$ </p>
 
 
 
