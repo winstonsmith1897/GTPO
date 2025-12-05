@@ -55,6 +55,7 @@ GTPO introduces **conflict-aware gradient corrections** and **entropy-based regu
 ![In-Distribution](images/In-Distribution.png)
 ![Complete-Out-of-Distribution](images/complete_ood.png)
 ![Out-of-Dsitribution](images/Out-of-Distribution.png)
+![Ablations](images/ablations.png)
 
 ---
 
