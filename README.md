@@ -9,8 +9,8 @@
 [<img src="images/unsloth_sticker.png" alt="Made with Unsloth" height="30">](https://unsloth.ai)
 
 <p align="center">
-  <img src="images/final_gtpo.png" alt="Logo" width="45%">
-  <img src="images/maze.gif" alt="Maze" width="45%">
+  <img src="images/final_gtpo.png" alt="Logo" width="40%">
+  <img src="images/maze.gif" alt="Maze" width="50%">
 </p>
 
 
