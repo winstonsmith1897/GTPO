@@ -39,7 +39,7 @@ GTPO introduces **conflict-aware gradient corrections** and **entropy-based regu
   Unlike GRPO, GTPO removes the dependency on KL divergence and external reference policies, reducing computational overhead.
 
 - **Empirical Validation**  
-  Extensive experiments on **GSM8K**, **MATH**, and **AIME 2024** benchmarks using **LLaMA-8B** and **Qwen 2.5-3B** demonstrate:
+  Extensive experiments on **GSM8K**, **MATH**, **AIME 2024**, **AIME 2025** and **AMC** benchmarks using **LLaMA-8B** and **Qwen 2.5-3B** demonstrate:
   - More stable training dynamics  
   - Improved reasoning accuracy  
   - Stronger out-of-distribution generalization  
