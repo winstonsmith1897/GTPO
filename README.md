@@ -9,7 +9,7 @@
 [<img src="images/unsloth_sticker.png" alt="Made with Unsloth" height="30">](https://unsloth.ai)
 
 ![Logo](images/final_gtpo.png)
-
+![Maze](images/MAZE.mp4)
 
 This repository contains the official implementation of **GTPO (Group-relative Trajectory-based Policy Optimization)**, a novel method for stable and effective policy optimization in Large Language Models (LLMs).  
 GTPO addresses key limitations of Group-relative Policy Optimization (GRPO), namely:
