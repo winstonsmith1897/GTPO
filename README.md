@@ -23,6 +23,19 @@ $$
 
 </p>
 
+<p align="center">
+
+$$
+  \delta_i =
+  \begin{cases}
+    1, & \text{if } \langle H \rangle_{ini} > \ln 2, \\
+    0, & \text{if } \langle H \rangle_{ini} < \ln 2 \text{ and } \langle H \rangle_i > \ln 2, \\
+    1, & \text{if } \langle H \rangle_{ini} < \ln 2 \text{ and } \langle H \rangle_i \leq \ln 2.
+  \end{cases}
+$$
+
+</p>
+
 
 This repository contains the official implementation of **GTPO (Group-relative Trajectory-based Policy Optimization)**, a novel method for stable and effective policy optimization in Large Language Models (LLMs).  
 GTPO addresses key limitations of Group-relative Policy Optimization (GRPO), namely:
