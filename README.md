@@ -50,7 +50,7 @@ GTPO introduces **conflict-aware gradient corrections** and **entropy-based regu
 
 - GTPO consistently outperforms GRPO and SFT in **accuracy**, **formatting consistency**, and **pass@k/maj@k metrics**.  
 - Demonstrates robustness against policy collapse, maintaining performance across long training runs.  
-- Out-of-distribution evaluation on **AIME 2024** shows significant improvements in reasoning generalization.  
+- Out-of-distribution evaluation on **AIME 2024**, **AIME 2025** and **AMC** shows significant improvements in reasoning generalization.  
 
 ![In-Distribution](images/In-Distribution.png)
 ![Complete-Out-of-Distribution](images/complete_ood.png)
