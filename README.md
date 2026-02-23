@@ -78,7 +78,8 @@ cd GTPO
 Install dependencies:
 
 ```bash
-pip install -r requirements.txt
+pip install uv
+uv pip install -r requirements.txt
 ```
 
 # Try GTPO on Colab
